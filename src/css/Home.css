@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300:400;500;600;700;800&display=swap');
+
+.containerHome {
+    margin: 0;
+    padding: 0;
+    background: url("../media/backgrounds/HomeBG.png") no-repeat center;
+    width: 100%;
+    height: 7670px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Montserrat, sans-serif;
+    color: #202020;
+}
+
+.greeting {
+    width: auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.greeting-text {
+    margin: 80px 0 0 0;
+    font-size: 72px;
+    font-family: Montserrat medium, sans-serif;
+    line-height: 102px;
+    color: #202020 ;
+}
+
+span {
+    color: #00BC71;
+}
+
+.hint {
+    width: 41vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.hint-text {
+    font-family: Montserrat medium, sans-serif;
+    font-size: 28px;
+    color: #686868;
+}
+
+.latest {
+    margin-top: 300px;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-brief {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.latest-release {
+    margin: 0;
+    font-family: Montserrat medium, sans-serif;
+    font-size: 44px;
+    letter-spacing: .5em;
+}
+
+.latest-title {
+    margin: 50px 0 0 0;
+    color: #00BC71;
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+    font-size: 112px;
+    letter-spacing: .4em;
+}
+
+.latest-date {
+    margin: 50px 0;
+    font-family: Montserrat medium, sans-serif;
+    font-size: 42px;
+    letter-spacing: .2em;
+}
+
+.intro {
+    margin: 300px 0 0 0;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+}
+
+.intro p {
+    margin: 0;
+    width: 35%;
+    font-family: Montserrat medium, sans-serif;
+    font-size: 32px;
+}
+
+.intro svg {
+    margin-left: 200px;
+}
+
+.note {
+    margin: 300px 0 0 0;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.note-sign {
+    margin: 0 0 50px 0;
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+    font-size: 60px;
+    color: #00BC71;
+}
+
+.note-text {
+    font-family: Montserrat medium, sans-serif;
+    font-size: 36px;
+    width: 75%;
+}
+
+.note-icons {
+    margin: 125px 0 0 0;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.note-icon {
+    width: 140px;
+    height: auto;
+}
+
+.note-icon-lake {
+    width: 160px;
+    height: auto;
+}
+
+.more {
+    margin: 300px 0 0 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.see-more {
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    font-size: 56px;
+    color: #202020;
+    text-decoration: none;
+}
+
+.see-more::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 12px;
+    background: #00BC71;
+}
+
+.see-more:hover::after {
+    width: 0;
+}
+
+.recommended {
+    margin-top: 350px;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.recommended-brief {
+    margin: 15% 0 0 0;
+    width: 100%;
+    height: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.description {
+    width: 40%;
+    height: 62%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    overflow: hidden;
+    background: #F2F2F2;
+}
+
+.description p {
+    width: 90%;
+    height: 85%;
+    font-family: Montserrat medium, sans-serif;
+    font-size: 25px;
+    line-height: 130%;
+    color: #202020;
+}
+
+.dark {
+    font-size: 35px;
+    line-height: 130%;
+    color: #202020
+}
+
+.carousel {
+    width: 55%;
+    height: 62%;
+    border-radius: 50px;
+    overflow: hidden;
+    background: #F2F2F2;
+}
+
+.carousel-item img {
+    width: 100%;
+}
+
+.recommended2 {
+    margin-top: 500px;
+}
+
+.recommended2 p {
+    font-family: Montserrat, sans-serif;
+    font-size: 80px;
+    font-weight: 900;
+}
