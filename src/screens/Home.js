@@ -9,13 +9,18 @@ import birch from '../media/icons/Frame-1.svg'
 import grass from '../media/icons/Frame-2.svg'
 import lake from '../media/icons/Frame-3.svg'
 import introImage from '../media/images/Elnya/Elnya1.jpg'
+import anime from "animejs";
 
 
 const Home = () => {
+
+    const homeREf = React.useRef(null)
+    React.useEffect()
+
     return (
         <div className="containerHome">
             <div className="greeting">
-                <p className="greeting-text">Welcome to <span>Trail</span>!</p>
+                <p className="greeting-text" id="greeting">Welcome to <span className="span-title">Trail</span>!</p>
                 <div className="hint">
                     <p className="hint-text">Go to:</p>
                     <QuickSearch title="Elnya" link="/#elnya"/>
@@ -30,7 +35,7 @@ const Home = () => {
                     <p className="latest-date">{date()}</p>
                 </div>
                 <div className="intro">
-                    <p><span>Elnya</span> is called one of the biggest lungs of Europe and is very old - 9000 y.o. Its pure air, vast mires views, endless cranberries plantations and fragrance - all worth coming for 3 hours. Highly recommended for nature lovers!</p>
+                    <p><span className="span-title">Elnya</span> is called one of the biggest lungs of Europe and is very old - 9000 y.o. Its pure air, vast mires views, endless cranberries plantations and fragrance - all worth coming for 3 hours. Highly recommended for nature lovers!</p>
                     <svg
                         width="827.5"
                         height="644.85"
@@ -88,7 +93,7 @@ const Home = () => {
                 </div>
             </div>
             <div className="recommended2" id="galleries">
-                <p><span>Galleries</span> are in progress...</p>
+                <p><span className="span-title">Galleries</span> are in progress...</p>
             </div>
         </div>
     );

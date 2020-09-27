@@ -6,13 +6,14 @@
     font-family: Montserrat, sans-serif;
 }
 
-
-.title p {
+.title-container p {
+    margin: 300px 0 0 200px;
+    height: 100px;
     font-family: Montserrat, sans-serif;
     font-weight: 900;
-    font-size: 100px;
-    margin: 300px 0 0 200px;
+    font-size: 80px;
     color: #000000;
+    overflow: hidden;
 }
 
 .forest {

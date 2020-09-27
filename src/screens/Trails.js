@@ -1,6 +1,7 @@
 import React from 'react';
 import '../css/Trails.css'
 
+
 const trails = () => {
     return (
         <div className="containerTrails">

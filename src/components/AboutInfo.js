@@ -19,11 +19,11 @@ class AboutInfo extends React.Component {
             <div className={"info-container " + this.state.position}>
                 <p className="name">{this.state.name}</p>
                 <div className="section">
-                    <p className="title">Phone number</p>
+                    <p className="header">Phone number</p>
                     <p className="number">{this.state.number}</p>
                 </div>
                 <div className="section">
-                    <p className="title">Email</p>
+                    <p className="header">Email</p>
                     <p className="email">{this.state.email}</p>
                 </div>
             </div>
