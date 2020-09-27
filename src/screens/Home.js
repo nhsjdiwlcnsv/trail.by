@@ -14,18 +14,58 @@ import anime from "animejs";
 
 const Home = () => {
 
-    const homeREf = React.useRef(null)
-    React.useEffect()
+    const homeRef = React.useRef(null);
+    React.useEffect(() => {
+        homeRef.current =
+            anime.timeline({ loop: false })
+                .add({
+                    targets: document.getElementsByClassName('animated-search1'),
+                    translateY: [50, 0],
+                    opacity: [0, 1],
+                    easing: "easeOutExpo",
+                    duration: 1400,
+                    delay: (el, i) => 800 + 30 * i
+                })
+            anime.timeline({ loop: false })
+                .add({
+                    targets: document.getElementsByClassName('animated-search2'),
+                    translateY: [50, 0],
+                    opacity: [0, 1],
+                    easing: "easeOutExpo",
+                    duration: 1400,
+                    delay: (el, i) => 900 + 30 * i
+                })
+            anime.timeline({ loop: false })
+                .add({
+                    targets: document.getElementsByClassName('animated-search3'),
+                    translateY: [50, 0],
+                    opacity: [0, 1],
+                    easing: "easeOutExpo",
+                    duration: 1400,
+                    delay: (el, i) => 1000 + 30 * i
+                })
+            anime.timeline({ loop: false })
+                .add({
+                    targets: document.getElementsByClassName('greeting-animated'),
+                    translateY: [-50, 0],
+                    opacity: [0, 1],
+                    easing: "easeOutExpo",
+                    duration: 1400,
+                    delay: (el, i) => 500 + 30 * i
+                })
+    }, [])
 
     return (
         <div className="containerHome">
             <div className="greeting">
-                <p className="greeting-text" id="greeting">Welcome to <span className="span-title">Trail</span>!</p>
+                <div className="greeting-animated">
+                    <p className="greeting-text" id="greeting">Welcome to <span className="span-title">Trail</span>!</p>
+                </div>
                 <div className="hint">
                     <p className="hint-text">Go to:</p>
-                    <QuickSearch title="Elnya" link="/#elnya"/>
-                    <QuickSearch title="Blue lakes" link="/#bluelakes"/>
-                    <QuickSearch title="Galleries" link="/#galleries"/>
+                    <div className="animated-search1"><QuickSearch title="Elnya" link="/#elnya"/></div>
+                    <div className="animated-search2"><QuickSearch title="Blue lakes" link="/#bluelakes"/></div>
+                    <div className="animated-search3"><QuickSearch title="Galleries" link="/#galleries"/></div>
                 </div>
             </div>
             <div className="latest" id="elnya">
