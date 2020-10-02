@@ -16,15 +16,15 @@ const greetingAndHintAnimation = () => {
                     duration: 1400,
                     delay: 500,
                 })
-        anime.timeline({ loop: false })
-            .add({
-                targets: document.getElementById('animated-hint'),
-                translateX: [-50, 0],
-                opacity: [0, 1],
-                easing: "easeOutExpo",
-                duration: 1400,
-                delay: 600,
-            })
+            anime.timeline({ loop: false })
+                .add({
+                    targets: document.getElementById('animated-hint'),
+                    translateX: [-50, 0],
+                    opacity: [0, 1],
+                    easing: "easeOutExpo",
+                    duration: 1400,
+                    delay: 600,
+                })
     }, [])
 }
 
@@ -45,24 +45,24 @@ const quickSearchAnimation = () => {
                     duration: 1400,
                     delay: 800,
                 })
-        anime.timeline({ loop: false })
-            .add({
-                targets: document.getElementsByClassName('animated-search2'),
-                translateY: [50, 0],
-                opacity: [0, 1],
-                easing: "easeOutExpo",
-                duration: 1400,
-                delay: 900,
-            })
-        anime.timeline({ loop: false })
-            .add({
-                targets: document.getElementsByClassName('animated-search3'),
-                translateY: [50, 0],
-                opacity: [0, 1],
-                easing: "easeOutExpo",
-                duration: 1400,
-                delay: 1000,
-            })
+            anime.timeline({ loop: false })
+                .add({
+                    targets: document.getElementsByClassName('animated-search2'),
+                    translateY: [50, 0],
+                    opacity: [0, 1],
+                    easing: "easeOutExpo",
+                    duration: 1400,
+                    delay: 900,
+                })
+            anime.timeline({ loop: false })
+                .add({
+                    targets: document.getElementsByClassName('animated-search3'),
+                    translateY: [50, 0],
+                    opacity: [0, 1],
+                    easing: "easeOutExpo",
+                    duration: 1400,
+                    delay: 1000,
+                })
     }, [])
 }
 

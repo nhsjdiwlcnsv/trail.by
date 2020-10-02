@@ -1,8 +1,7 @@
 import React from 'react';
 import '../css/About.css'
-import { Waypoint } from "react-waypoint";
 import AboutInfo from "../components/AboutInfo";
-import { pageTitleAnimation, projectIntroAnimation, topAnimation, middleAnimation, bottomAnimation } from "../scripts/aboutAnimations";
+import { pageTitleAnimation, projectIntroAnimation } from "../scripts/aboutAnimations";
 
 
 const About = () => {
@@ -23,34 +22,29 @@ const About = () => {
             <div className="forest">
                 <div className="all-info">
                     <div id="animated-info1">
-                        <Waypoint onEnter={topAnimation()} >
-                            <AboutInfo
-                                name="Vasiliy Pupkin"
-                                number="+375 29 973 79 43"
-                                email="vasyapupkin@gmail.com"
-                                position="top"
-                            />
-                        </Waypoint>
+                        <AboutInfo
+                            name="Vasiliy Pupkin"
+                            number="+375 29 973 79 43"
+                            email="vasyapupkin@gmail.com"
+                            position="top"
+                        />
                     </div>
                     <div id="animated-info2">
-                        <Waypoint onEnter={middleAnimation()}>
-                            <AboutInfo
-                                name="Aleksey Smirnov"
-                                number="+375 29 337 91 07"
-                                email="asmirn@gmail.com"
-                                position="middle"
-                            />
-                        </Waypoint>
+                        <AboutInfo
+                            name="Aleksey Smirnov"
+                            number="+375 29 337 91 07"
+                            email="asmirn@gmail.com"
+                            position="middle"
+                        />
+
                     </div>
                     <div id="animated-info3">
-                        <Waypoint onEnter={bottomAnimation()}>
-                            <AboutInfo
-                                name="Ivan Karpovski"
-                                number="+375 29 655 74 25"
-                                email="karpovski@gmail.com"
-                                position="down"
-                            />
-                        </Waypoint>
+                        <AboutInfo
+                            name="Ivan Karpovski"
+                            number="+375 29 655 74 25"
+                            email="karpovski@gmail.com"
+                            position="down"
+                        />
                     </div>
                 </div>
             </div>

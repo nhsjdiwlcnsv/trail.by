@@ -3,7 +3,7 @@ import '../css/Home.css';
 import QuickSearch from '../components/QuickSearch'
 import path from '../scripts/paths'
 import date from '../scripts/getDate'
-import {greetingAndHintAnimation, quickSearchAnimation} from '../scripts/homeAnimations'
+import {greetingAndHintAnimation, quickSearchAnimation } from '../scripts/homeAnimations'
 import '../scripts/carousel'
 import fir from '../media/icons/Frame.svg'
 import birch from '../media/icons/Frame-1.svg'
@@ -33,7 +33,8 @@ const Home = () => {
             <div className="latest" id="elnya">
                 <div className="title-brief">
                     <p className="latest-release">LATEST RELEASE IS</p>
-                    <p className="latest-title">ELNYA</p>
+                    <span className="line" />
+                    <p id="animated-latest-title" className="latest-title">ELNYA</p>
                     <p className="latest-date">{date()}</p>
                 </div>
                 <div className="intro">
