@@ -10,7 +10,7 @@
     width: 100%;
 }
 
-.nav div {
+.nav-item {
     float: right;
     padding: 35px 75px;
 }

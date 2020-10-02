@@ -3,57 +3,19 @@ import '../css/Home.css';
 import QuickSearch from '../components/QuickSearch'
 import path from '../scripts/paths'
 import date from '../scripts/getDate'
+import {greetingAndHintAnimation, quickSearchAnimation} from '../scripts/homeAnimations'
 import '../scripts/carousel'
 import fir from '../media/icons/Frame.svg'
 import birch from '../media/icons/Frame-1.svg'
 import grass from '../media/icons/Frame-2.svg'
 import lake from '../media/icons/Frame-3.svg'
 import introImage from '../media/images/Elnya/Elnya1.jpg'
-import anime from "animejs";
 
 
 const Home = () => {
 
-    const homeRef = React.useRef(null);
-    React.useEffect(() => {
-        homeRef.current =
-            anime.timeline({ loop: false })
-                .add({
-                    targets: document.getElementsByClassName('animated-search1'),
-                    translateY: [50, 0],
-                    opacity: [0, 1],
-                    easing: "easeOutExpo",
-                    duration: 1400,
-                    delay: (el, i) => 800 + 30 * i
-                })
-            anime.timeline({ loop: false })
-                .add({
-                    targets: document.getElementsByClassName('animated-search2'),
-                    translateY: [50, 0],
-                    opacity: [0, 1],
-                    easing: "easeOutExpo",
-                    duration: 1400,
-                    delay: (el, i) => 900 + 30 * i
-                })
-            anime.timeline({ loop: false })
-                .add({
-                    targets: document.getElementsByClassName('animated-search3'),
-                    translateY: [50, 0],
-                    opacity: [0, 1],
-                    easing: "easeOutExpo",
-                    duration: 1400,
-                    delay: (el, i) => 1000 + 30 * i
-                })
-            anime.timeline({ loop: false })
-                .add({
-                    targets: document.getElementsByClassName('greeting-animated'),
-                    translateY: [-50, 0],
-                    opacity: [0, 1],
-                    easing: "easeOutExpo",
-                    duration: 1400,
-                    delay: (el, i) => 500 + 30 * i
-                })
-    }, [])
+    greetingAndHintAnimation()
+    quickSearchAnimation()
 
     return (
         <div className="containerHome">
@@ -62,7 +24,7 @@ const Home = () => {
                     <p className="greeting-text" id="greeting">Welcome to <span className="span-title">Trail</span>!</p>
                 </div>
                 <div className="hint">
-                    <p className="hint-text">Go to:</p>
+                    <p id="animated-hint" className="hint-text">Go to:</p>
                     <div className="animated-search1"><QuickSearch title="Elnya" link="/#elnya"/></div>
                     <div className="animated-search2"><QuickSearch title="Blue lakes" link="/#bluelakes"/></div>
                     <div className="animated-search3"><QuickSearch title="Galleries" link="/#galleries"/></div>
@@ -109,11 +71,11 @@ const Home = () => {
                 </div>
             </div>
             <div className="recommended" id="bluelakes">
-                <p className="greeting-text">We also recommend you visiting <span>Blue Lakes</span>:</p>
+                <p className="greeting-text">We also recommend you visiting <span className="span-title">Blue Lakes</span>:</p>
                 <div className="recommended-brief">
                     <div className="description">
                         <p>
-                            <span className="dark">Ecological trail "<span>Blue Lakes</span>"</span>
+                            <span className="dark">Ecological trail "<span className="span-title">Blue Lakes</span>"</span>
                             <br/>
                             <br/>
                             is located on the territory of the Narochansky National Park in the Myadel district, 500 m beyond the village of Olshevo.

@@ -1,48 +1,14 @@
 import React from 'react';
 import '../css/About.css'
+import { Waypoint } from "react-waypoint";
 import AboutInfo from "../components/AboutInfo";
-import anime from 'animejs/lib/anime.es.js';
+import { pageTitleAnimation, projectIntroAnimation, topAnimation, middleAnimation, bottomAnimation } from "../scripts/aboutAnimations";
 
 
 const About = () => {
 
-    const aboutRef = React.useRef(null);
-    React.useEffect(() => {
-        let titleWrapper = document.querySelector('#animated-title, #animated-text');
-        titleWrapper.innerHTML = titleWrapper.textContent.replace(/\S/g, "<span className='letter'>$&</span>");
-
-        aboutRef.current =
-            anime.timeline({ loop: false })
-                .add({
-                    targets: document.querySelectorAll('#animated-title, .letter'),
-                    translateX: [50,0],
-                    translateZ: 0,
-                    opacity: [0, 1],
-                    easing: "easeOutExpo",
-                    duration: 1200,
-                    delay: (el, i) => 500 + 30 * i
-                })
-            anime.timeline({ loop: false })
-                .add({
-                    targets: document.querySelectorAll('#animated-text, .letter'),
-                    translateX: [-50,0],
-                    translateZ: 0,
-                    opacity: [0, 1],
-                    easing: "easeOutExpo",
-                    duration: 1600,
-                    delay: (el, i) => 600 + 30 * i
-                })
-            anime.timeline({ loop: false })
-                .add({
-                    targets: document.querySelectorAll('#animated-info'),
-                    translateX: [-50,0],
-                    translateZ: 0,
-                    opacity: [0, 1],
-                    easing: "easeOutExpo",
-                    duration: 1600,
-                    delay: (el, i) => 600 + 30 * i
-                })
-    }, [])
+    pageTitleAnimation()
+    projectIntroAnimation()
 
     return (
         <div className="containerAbout">
@@ -51,34 +17,41 @@ const About = () => {
             </div>
             <div className="general-info">
                 <p id="animated-text" className="animated-text">
-                    Trail helps you discover the world of ecotourism in Belarus. We have collected a variety of eco-trails from all over Belarus, so that everyone can find a route to their liking
+                    Trail helps you discover the world of ecotourism in Belarus. We have collected a variety of eco-trails from all over Belarus, so that everyone can find a route to their liking.
                 </p>
             </div>
             <div className="forest">
-
-                <div id="animated-info1">
-                    <AboutInfo
-                        name="Vasiliy Pupkin"
-                        number="+375 29 973 79 43"
-                        email="vasyapupkin@gmail.com"
-                        position="top"
-                    />
-                </div>
-                <div id="animated-info2">
-                    <AboutInfo
-                        name="Aleksey Smirnov"
-                        number="+375 29 337 91 07"
-                        email="asmirn@gmail.com"
-                        position="middle"
-                    />
-                </div>
-                <div id="animated-info3">
-                    <AboutInfo
-                        name="Ivan Karpovski"
-                        number="+375 29 655 74 25"
-                        email="karpovski@gmail.com"
-                        position="down"
-                    />
+                <div className="all-info">
+                    <div id="animated-info1">
+                        <Waypoint onEnter={topAnimation()} >
+                            <AboutInfo
+                                name="Vasiliy Pupkin"
+                                number="+375 29 973 79 43"
+                                email="vasyapupkin@gmail.com"
+                                position="top"
+                            />
+                        </Waypoint>
+                    </div>
+                    <div id="animated-info2">
+                        <Waypoint onEnter={middleAnimation()}>
+                            <AboutInfo
+                                name="Aleksey Smirnov"
+                                number="+375 29 337 91 07"
+                                email="asmirn@gmail.com"
+                                position="middle"
+                            />
+                        </Waypoint>
+                    </div>
+                    <div id="animated-info3">
+                        <Waypoint onEnter={bottomAnimation()}>
+                            <AboutInfo
+                                name="Ivan Karpovski"
+                                number="+375 29 655 74 25"
+                                email="karpovski@gmail.com"
+                                position="down"
+                            />
+                        </Waypoint>
+                    </div>
                 </div>
             </div>
         </div>
