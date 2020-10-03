@@ -3,14 +3,13 @@
 .containerHome {
     margin: 0;
     padding: 0;
-    /*background: url("../media/backgrounds/HomeBG.png") no-repeat center;*/
     width: 100%;
     height: 7670px;
     display: flex;
     flex-direction: column;
     align-items: center;
     font-family: Montserrat, sans-serif;
-    color: #202020;
+    color: var(--text);
 }
 
 .greeting {
@@ -27,11 +26,11 @@
     font-size: 72px;
     font-family: Montserrat medium, sans-serif;
     line-height: 102px;
-    color: #202020 ;
+    color: var(--text) ;
 }
 
 .span-title {
-    color: #00BC71;
+    color: var(--text-marked);
 }
 
 .hint {
@@ -45,7 +44,7 @@
 .hint-text {
     font-family: Montserrat medium, sans-serif;
     font-size: 28px;
-    color: #686868;
+    color: var(--text-subtitle);
 }
 
 .latest {
@@ -71,7 +70,7 @@
 
 .latest-title {
     margin: 50px 0 0 0;
-    color: #00BC71;
+    color: var(--text-marked);
     font-family: Montserrat, sans-serif;
     font-weight: bold;
     font-size: 112px;
@@ -117,7 +116,7 @@
     font-family: Montserrat, sans-serif;
     font-weight: bold;
     font-size: 60px;
-    color: #00BC71;
+    color: var(--text-marked);
 }
 
 .note-text {
@@ -156,7 +155,7 @@
     font-family: Montserrat, sans-serif;
     font-weight: 600;
     font-size: 56px;
-    color: #202020;
+    color: var(--text);
     text-decoration: none;
 }
 
@@ -165,7 +164,7 @@
     display: block;
     width: 100%;
     height: 12px;
-    background: #00BC71;
+    background: var(--text-marked);
 }
 
 .see-more:hover::after {
@@ -197,7 +196,7 @@
     align-items: center;
     border-radius: 50px;
     overflow: hidden;
-    background: #F2F2F2;
+    background: var(--card);
 }
 
 .description p {
@@ -206,13 +205,13 @@
     font-family: Montserrat medium, sans-serif;
     font-size: 25px;
     line-height: 130%;
-    color: #202020;
+    color: var(--text);
 }
 
 .dark {
     font-size: 35px;
     line-height: 130%;
-    color: #202020
+    color: var(--text)
 }
 
 .carousel {
@@ -220,7 +219,6 @@
     height: 62%;
     border-radius: 50px;
     overflow: hidden;
-    background: #F2F2F2;
 }
 
 .carousel-item img {

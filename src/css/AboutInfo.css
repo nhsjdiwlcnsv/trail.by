@@ -6,6 +6,7 @@
 }
 
 .name {
+    color: var(--text);
     font-weight: bold;
     font-size: 54px;
     margin: 0;
@@ -18,7 +19,7 @@
 .header {
     font-size: 28px;
     font-family: Montserrat medium, sans-serif;
-    color: #686868;
+    color: var(--text-subtitle);
     margin: 0;
 }
 
@@ -26,5 +27,5 @@
     margin: 10px 0 0 0;
     font-size: 28px;
     font-family: Montserrat medium, sans-serif;
-    color: #000000;
+    color: var(--text);
 }

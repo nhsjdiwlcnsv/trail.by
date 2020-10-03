@@ -3,7 +3,7 @@ import '../css/Home.css';
 import QuickSearch from '../components/QuickSearch'
 import path from '../scripts/paths'
 import date from '../scripts/getDate'
-import {greetingAndHintAnimation, quickSearchAnimation } from '../scripts/homeAnimations'
+import { greetingAndHintAnimation, quickSearchAnimation } from '../scripts/homeAnimations'
 import '../scripts/carousel'
 import fir from '../media/icons/Frame.svg'
 import birch from '../media/icons/Frame-1.svg'
@@ -16,6 +16,7 @@ const Home = () => {
 
     greetingAndHintAnimation()
     quickSearchAnimation()
+
 
     return (
         <div className="containerHome">
