@@ -1,9 +1,10 @@
-import AboutBG from '../../media/backgrounds/AboutBG.png'
-import AboutBGBlack from '../../media/backgrounds/AboutBGBlack.png'
+import AboutBG from '../media/backgrounds/AboutBG.png'
+import AboutBGBlack from '../media/backgrounds/AboutBGBlack.png'
 
 
 const palettes = {
     light: {
+        name: "light",
         backgroundImage:`url(${ AboutBG })`,
         backgroundColor: '#FFFFFF',
         textColor: '#202020',
@@ -15,6 +16,7 @@ const palettes = {
         buttonBackground: '#E2E2E2'
     },
     dark: {
+        name: "dark",
         backgroundImage: `url(${ AboutBGBlack })`,
         backgroundColor: '#161616',
         textColor: '#FFFFFF',

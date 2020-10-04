@@ -1,12 +1,12 @@
-import { useState } from "react";
-import palettes from'../scripts/constants/colorPalettes'
+import React, { useState } from "react";
+import palettes from '../constants/colorPalettes'
 
 
 const switchTheme = () => {
     let [paletteName, setPaletteName] = useState("light");
     return [
         palettes[paletteName],
-        () => setPaletteName(paletteName === "light" ? "dark" : "light")
+        () => setPaletteName(paletteName === "light" ? "dark" : "light"),
     ];
 
 }

@@ -10,10 +10,15 @@ import SwitchThemeButton from "./navigation/SwitchThemeButton";
 import switchTheme from '../src/scripts/switchTheme'
 
 
+const ThemeContext = React.createContext(null);
+export { ThemeContext }
+
+
 let App = () => {
+
     const [theme, setTheme] = switchTheme();
     return (
-        <div>
+        <ThemeContext.Provider value={theme}>
             <style>
                 {
                     `
@@ -47,7 +52,7 @@ let App = () => {
                     </Switch>
                 </div>
             </BrowserRouter>
-        </div>
+        </ThemeContext.Provider>
     );
 }
 
