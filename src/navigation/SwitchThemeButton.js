@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import { HiOutlineMoon } from "react-icons/hi"
 import { IconContext } from "react-icons/"
 import '../css/SwitchThemeButton.css'

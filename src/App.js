@@ -32,8 +32,8 @@ let App = () => {
                         --quick-search: ${theme.quickSearchColor};
                         --card: ${theme.cardColor};
                         --button-background: ${theme.buttonBackground};
-                        transition: .3s;    
-                        
+                        transition: .3s;
+                                               
                         background: var(--background);
                     }
                     `
