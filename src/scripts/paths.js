@@ -1,4 +1,4 @@
-let path = () => {
+const path = () => {
 
     let paths = []
 

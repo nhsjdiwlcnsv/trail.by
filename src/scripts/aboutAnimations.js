@@ -18,7 +18,7 @@ const pageTitleAnimation = () => {
                     opacity: [0, 1],
                     easing: "easeOutExpo",
                     duration: 1600,
-                    delay: (el, i) => 500 + 30 * i
+                    delay: (el, i) => 500 + 50 * i
                 })
     }, [])
 }

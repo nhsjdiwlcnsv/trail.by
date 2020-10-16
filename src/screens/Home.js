@@ -3,7 +3,8 @@ import '../css/Home.css';
 import QuickSearch from '../components/QuickSearch'
 import path from '../scripts/paths'
 import date from '../scripts/getDate'
-import { greetingAndHintAnimation, quickSearchAnimation } from '../scripts/homeAnimations'
+import { greetingAndHintAnimation, quickSearchAnimation, latestAnimation } from '../scripts/homeAnimations'
+import { Waypoint } from "react-waypoint"
 import '../scripts/carousel'
 import fir from '../media/icons/Frame.svg'
 import birch from '../media/icons/Frame-1.svg'
@@ -16,7 +17,6 @@ const Home = () => {
 
     greetingAndHintAnimation()
     quickSearchAnimation()
-
 
     return (
         <div className="containerHome">
@@ -32,12 +32,13 @@ const Home = () => {
                 </div>
             </div>
             <div className="latest" id="elnya">
-                <div className="title-brief">
-                    <p className="latest-release">LATEST RELEASE IS</p>
-                    <span className="line" />
-                    <p id="animated-latest-title" className="latest-title">ELNYA</p>
-                    <p className="latest-date">{date()}</p>
-                </div>
+                <Waypoint onEnter={latestAnimation()} /*topOffset={60}*/>
+                    <div className="title-brief">
+                        <p className="latest-release">LATEST RELEASE IS</p>
+                        <p id="animated-latest-title" className="latest-title">ELNYA</p>
+                        <p className="latest-date">{date()}</p>
+                    </div>
+                </Waypoint>
                 <div className="intro">
                     <p><span className="span-title">Elnya</span> is called one of the biggest lungs of Europe and is very old - 9000 y.o. Its pure air, vast mires views, endless cranberries plantations and fragrance - all worth coming for 3 hours. Highly recommended for nature lovers!</p>
                     <svg

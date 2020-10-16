@@ -1,26 +1,32 @@
-import React from "react";
+import React, {useState} from "react";
 import anime from "animejs";
 
 
 const navbarAnimation = () => {
 
     const navRef = React.useRef(null)
+    let [animationPassed, setIsPassed] = useState(sessionStorage.getItem('animationPassed'));
     React.useEffect(() => {
-        navRef.current =
-            anime.timeline({ loop: false })
-                .add({
-                    targets: document.getElementsByClassName("nav-item"),
-                    translateY: [5, 0],
-                    opacity: [0, 1],
-                    duration: 1500,
-                    delay: (el, i) => i * 200 + 400,
-                })
-                .add({
-                    targets: document.getElementsByClassName("nav-logo"),
-                    translateY: [5, 0],
-                    opacity: [0, 1],
-                    duration: 1500,
-                })
+        if (!sessionStorage.getItem('animationPassed')) {
+            navRef.current =
+                anime.timeline({ loop: false })
+                    .add({
+                        targets: document.getElementsByClassName("nav-item"),
+                        translateY: [-15, 0],
+                        opacity: [0, 1],
+                        duration: 1500,
+                        delay: (el, i) => i * 200 + 2100,
+                    })
+                    .add({
+                        targets: document.getElementsByClassName("nav-logo"),
+                        translateY: [-15, 0],
+                        opacity: [0, 1],
+                        easing: 'easeOutExpo',
+                        duration: 1500,
+                    })
+            setIsPassed(!animationPassed)
+            sessionStorage.setItem('animationPassed', animationPassed)
+        }
     }, [])
 }
 
