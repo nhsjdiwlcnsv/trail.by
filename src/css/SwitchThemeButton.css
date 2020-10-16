@@ -1,5 +1,6 @@
 .switch-button {
     position: fixed;
+    z-index: 999;
     top: 87.5%;
     left: 2.5%;
     width: 56px;
