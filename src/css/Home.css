@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 7670px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -32,7 +31,6 @@
 }
 
 .hint {
-    width: 41vw;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -61,9 +59,10 @@
 
 .latest-release {
     margin: 0;
-    font-family: Montserrat medium, sans-serif;
-    font-size: 44px;
-    letter-spacing: .5em;
+    font-family: Montserrat, sans-serif;
+    font-weight: 900;
+    font-size: 96px;
+    letter-spacing: .2em;
 }
 
 .latest-title {
@@ -92,7 +91,7 @@
 
 .intro p {
     margin: 0;
-    width: 35%;
+    width: 40%;
     font-family: Montserrat medium, sans-serif;
     font-size: 32px;
 }
@@ -175,6 +174,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.recommended-text {
+    font-family: Montserrat, sans-serif;
+    font-weight: 900;
+    font-size: 96px;
 }
 
 .recommended-brief {

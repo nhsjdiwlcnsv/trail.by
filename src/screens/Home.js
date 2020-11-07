@@ -1,10 +1,11 @@
-import React from 'react';
-import '../css/Home.css';
+import React from 'react'
+import '../css/Home.css'
 import QuickSearch from '../components/QuickSearch'
 import path from '../scripts/paths'
 import date from '../scripts/getDate'
-import { greetingAndHintAnimation, quickSearchAnimation, latestAnimation } from '../scripts/homeAnimations'
-import { Waypoint } from "react-waypoint"
+import { greetingAndHintAnimation, quickSearchAnimation } from '../scripts/homeAnimations'
+import scrollToTop from '../scripts/scrollToTop'
+import Footer from "../navigation/Footer";
 import '../scripts/carousel'
 import fir from '../media/icons/Frame.svg'
 import birch from '../media/icons/Frame-1.svg'
@@ -17,12 +18,16 @@ const Home = () => {
 
     greetingAndHintAnimation()
     quickSearchAnimation()
+    scrollToTop()
 
     return (
         <div className="containerHome">
             <div className="greeting">
                 <div className="greeting-animated">
                     <p className="greeting-text" id="greeting">Welcome to <span className="span-title">Trail</span>!</p>
+                </div>
+                <div className="about-trail">
+
                 </div>
                 <div className="hint">
                     <p id="animated-hint" className="hint-text">Go to:</p>
@@ -32,13 +37,10 @@ const Home = () => {
                 </div>
             </div>
             <div className="latest" id="elnya">
-                <Waypoint onEnter={latestAnimation()} /*topOffset={60}*/>
-                    <div className="title-brief">
-                        <p className="latest-release">LATEST RELEASE IS</p>
-                        <p id="animated-latest-title" className="latest-title">ELNYA</p>
-                        <p className="latest-date">{date()}</p>
-                    </div>
-                </Waypoint>
+                <div className="title-brief">
+                    <p className="latest-release">Meet <span className="span-title">Elnya</span></p>
+                    <p className="latest-date">{date()}</p>
+                </div>
                 <div className="intro">
                     <p><span className="span-title">Elnya</span> is called one of the biggest lungs of Europe and is very old - 9000 y.o. Its pure air, vast mires views, endless cranberries plantations and fragrance - all worth coming for 3 hours. Highly recommended for nature lovers!</p>
                     <svg
@@ -49,7 +51,6 @@ const Home = () => {
                         <defs>
                             <pattern
                                 id="pattern"
-                                patternUnits="userSpaceOnUse"
                                 height="100%"
                                 width="100%"
                             >
@@ -60,7 +61,7 @@ const Home = () => {
                     </svg>
                 </div>
                 <div className="note">
-                    <p className="note-sign">Note:</p>
+                    <p className="note-sign">Note</p>
                     <p className="note-text">Here you can find both coniferous trees (pines, for instance), and deciduous species, such as birches. Also here are some small lakes and ponds, that are separated by some swamp vegetation.</p>
                     <div className="note-icons">
                         <img className="note-icon note-icon-fir" alt="note-icon" src={fir}/>
@@ -69,12 +70,12 @@ const Home = () => {
                         <img className="note-icon note-icon-lake" alt="note-icon" src={lake}/>
                     </div>
                     <div className="more">
-                        <a href="/" className="see-more">See more...</a>
+                        <a href="/ecotrail/elnya" className="see-more">See more...</a>
                     </div>
                 </div>
             </div>
             <div className="recommended" id="bluelakes">
-                <p className="greeting-text">We also recommend you visiting <span className="span-title">Blue Lakes</span>:</p>
+                <p className="recommended-text">We also recommend you visiting <span className="span-title">Blue Lakes</span>:</p>
                 <div className="recommended-brief">
                     <div className="description">
                         <p>
@@ -93,13 +94,14 @@ const Home = () => {
                         </div>
                     </div>
                     <div className="more">
-                        <a href="/" className="see-more">See more...</a>
+                        <a href="/ecotrail/blue-lakes" className="see-more">See more...</a>
                     </div>
                 </div>
             </div>
             <div className="recommended2" id="galleries">
                 <p><span className="span-title">Galleries</span> are in progress...</p>
             </div>
+            <Footer />
         </div>
     );
 }

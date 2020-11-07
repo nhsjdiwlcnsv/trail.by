@@ -13,19 +13,21 @@ const palettes = {
         navLinkColor: '#000000',
         quickSearchColor: '#E2E2E2',
         cardColor: '#F2F2F2',
-        buttonBackground: '#E2E2E2'
+        buttonBackground: '#E2E2E2',
+        shadow: 'rgba(0, 0, 0, 0.2)'
     },
     dark: {
         name: "dark",
         backgroundImage: `url(${ AboutBGBlack })`,
-        backgroundColor: '#161616',
+        backgroundColor: '#181818',
         textColor: '#FFFFFF',
         markedTextColor: '#00BC71',
         subtitleTextColor: '#8C8C8C',
         navLinkColor: '#FFFFFF',
         quickSearchColor: '#2C2C2C',
         cardColor: '#2D2D2D',
-        buttonBackground: '#00BC71'
+        buttonBackground: '#00BC71',
+        shadow: '#000000'
     }
 }
 

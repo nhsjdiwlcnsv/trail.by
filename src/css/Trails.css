@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 4000px;
     font-family: Montserrat, sans-serif;
 }
 
@@ -13,18 +12,16 @@
 }
 
 .search-trails {
-    /*background: red;*/
     height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 
 .search-container {
-    /*background: blue;*/
-    height: 30%;
+    height: 29%;
     width: 100%;
     display: flex;
     align-items: center;
@@ -33,24 +30,26 @@
 
 .search {
     padding: 0 50px 0 75px;
-    width: 45%;
-    height: 30%;
+    width: 0;
+    height: 32%;
     border-radius: 50px;
     background: var(--card);
     border: none;
     color: var(--text);
     font-size: 28px;
     font-family: Montserrat medium, sans-serif;
+    transition: .2s;
 }
 
 .search-outline {
-    left: 376px;
+    left: 25%;
     position: absolute;
     color: var(--text);
+    cursor: pointer;
 }
 
 .parameters {
-    /*background: green;*/
+    height: 47%;
     width: 70%;
     display: flex;
     justify-content: space-between;
@@ -87,7 +86,6 @@
 }
 
 .params-list {
-    margin-top: 50%;
     width: 100%;
     height: 100%;
 }
@@ -104,7 +102,6 @@
     font-size: 28px;
     font-weight: bold;
     color: var(--text);
-    transition: .3s;
 }
 
 .list p:hover {

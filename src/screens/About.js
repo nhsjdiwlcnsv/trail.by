@@ -1,23 +1,26 @@
-import React from 'react';
+import React from 'react'
 import '../css/About.css'
-import AboutInfo from "../components/AboutInfo";
-import { pageTitleAnimation, projectIntroAnimation } from "../scripts/aboutAnimations";
+import AboutInfo from "../components/AboutInfo"
+import { projectIntroAnimation } from "../scripts/aboutAnimations"
+import scrollToTop from '../scripts/scrollToTop'
+import Footer from "../navigation/Footer";
+import AboutTextBG from "../media/backgrounds/AboutTextBG.svg"
 
 
 const About = () => {
 
-    pageTitleAnimation()
     projectIntroAnimation()
+    scrollToTop()
 
     return (
         <div className="containerAbout">
-            <div className="name-container">
-                <p id="animated-title" className="animated-title">About us...</p>
-            </div>
             <div className="general-info">
                 <p id="animated-text" className="animated-text">
-                    Trail helps you discover the world of ecotourism in Belarus. We have collected a variety of eco-trails from all over Belarus, so that everyone can find a route to their liking.
+                    Trail helps you discover the world of ecotourism in Belarus due to collecting a variety of ecotrails from all over the country.
                 </p>
+                <div className="firs">
+                    <img className="firs-img" src={AboutTextBG} alt="firs"/>
+                </div>
             </div>
             <div className="forest">
                 <div className="all-info">
@@ -48,6 +51,7 @@ const About = () => {
                     </div>
                 </div>
             </div>
+            <Footer />
         </div>
     );
 }

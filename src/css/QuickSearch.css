@@ -10,7 +10,6 @@ a {
     height: 38px;
     border-radius: 50px;
     background: var(--quick-search);
-    transition: .2s;
 }
 
 .tag p {

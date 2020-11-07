@@ -6,6 +6,7 @@ import About from './screens/About';
 import Contact from './screens/Contact';
 import Error from './screens/Error';
 import Navigation from './navigation/Navigation';
+import Trail from "./screens/Trail";
 import SwitchThemeButton from "./navigation/SwitchThemeButton";
 import switchTheme from '../src/scripts/switchTheme'
 
@@ -17,6 +18,7 @@ export { ThemeContext }
 let App = () => {
 
     const [theme, setTheme] = switchTheme();
+
     return (
         <ThemeContext.Provider value={theme}>
             <style>
@@ -32,7 +34,8 @@ let App = () => {
                         --quick-search: ${theme.quickSearchColor};
                         --card: ${theme.cardColor};
                         --button-background: ${theme.buttonBackground};
-                        transition: .3s;
+                        --shadow: ${theme.shadow};
+                        transition: .2s;
                                                
                         background: var(--background);
                     }
@@ -45,6 +48,7 @@ let App = () => {
                     <SwitchThemeButton onClick={() => setTheme()}/>
                     <Switch>
                         <Route path="/trails" component={Trails}/>
+                        <Route exact path="/ecotrail/:trailName" component={Trail}/>
                         <Route path="/" component={Home} exact/>
                         <Route path="/about" component={About}/>
                         <Route path="/contact" component={Contact}/>

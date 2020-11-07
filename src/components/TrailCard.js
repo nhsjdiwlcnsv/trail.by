@@ -1,54 +1,51 @@
 import React from "react";
-import '../css/trailCard.css'
+import '../css/TrailCard.css'
+import { Link } from "react-router-dom"
 
 
-class TrailCard extends React.Component {
+const TrailCard = props => {
 
-    constructor(props) {
-        super(props);
+    let [title] = React.useState(props.title)
+    let [region] = React.useState(props.region)
+    let [type] = React.useState(props.type)
+    let [distance] = React.useState(props.distance)
+    let [background] = React.useState(props.background)
+    let [trailName] = React.useState(props.trailName)
 
-        this.state = {
-            title: this.props.title,
-            region: this.props.region,
-            type: this.props.type,
-            distance: this.props.distance,
-            background: this.props.background,
-        }
-    }
-
-    render () {
-        return (
-            <div className="card">
-                <div className="top-background">
-                    <img alt="background" src={this.state.background}/>
-                    <div className="title-container">
-                        <p className="title">{this.state.title}</p>
-                    </div>
-                </div>
-                <div className="bottom-content">
-                    <div className="params">
-                        <div className="param-section">
-                            <p className="param-title">Region</p>
-                            <p className="param-value" id="region">{this.state.region}</p>
-                        </div>
-                        <div className="param-section">
-                            <p className="param-title">Type</p>
-                            <p className="param-value" style={{color: this.state.type === "Forest" ? "#00BC71" : "#8BBC00"}}>
-                                {this.state.type}
-                            </p>
-                        </div>
-                        <div className="param-section">
-                            <p className="param-title">Distance</p>
-                            <p className="param-value" id="distance">{this.state.distance}</p>
-                        </div>
-                    </div>
-                    <div className="see-more-link">
-                        <a className="see-more-card" href="/">See more</a>
-                    </div>
+    return (
+        <div className="card">
+            <div className="top-background">
+                <img alt="background" src={background}/>
+                <div className="title-container">
+                    <p className="title">{title}</p>
                 </div>
             </div>
-        )
-    }
+            <div className="bottom-content">
+                <div className="params">
+                    <div className="param-section">
+                        <p className="param-title">Region</p>
+                        <p className="param-value" id="region">{region}</p>
+                    </div>
+                    <div className="param-section">
+                        <p className="param-title">Type</p>
+                        <p className="param-value" style={{color: type === "Forest" ? "#00BC71" : "#8BBC00"}}>
+                            {type}
+                        </p>
+                    </div>
+                    <div className="param-section">
+                        <p className="param-title">Distance</p>
+                        <p className="param-value" id="distance">{distance}</p>
+                    </div>
+                </div>
+                <div className="see-more-link">
+                    <Link className="see-more-card" to={`/ecotrail/${trailName}`}>
+                        See more
+                    </Link>
+                </div>
+            </div>
+        </div>
+    )
 }
+
 
 export default TrailCard

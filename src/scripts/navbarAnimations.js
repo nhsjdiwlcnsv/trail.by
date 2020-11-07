@@ -7,6 +7,7 @@ const navbarAnimation = () => {
     const navRef = React.useRef(null)
     let [animationPassed, setIsPassed] = useState(sessionStorage.getItem('animationPassed'));
     React.useEffect(() => {
+
         if (!sessionStorage.getItem('animationPassed')) {
             navRef.current =
                 anime.timeline({ loop: false })
