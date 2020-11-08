@@ -79,27 +79,6 @@ const Trails = () => {
                         background={OlmanskieSwamps}
                         trailName="olmanskie-swamps"
                     />
-                    <TrailCard
-                        title="Syabryn crossroads"
-                        region="Minsk"
-                        type="Forest"
-                        distance="960 m"
-                        trailName="syabryn-crossroads"
-                    />
-                    <TrailCard
-                        title="Stone plate"
-                        region="Minsk"
-                        type="Forest"
-                        distance="7.5 km"
-                        trailName="stone-plate"
-                    />
-                    <TrailCard
-                        title="Along the forest reserve trail"
-                        region="Minsk"
-                        type="Forest"
-                        distance="2.5 km"
-                        trailName="forest-reserve-trail"
-                    />
                 </div>
             </div>
             <Footer />
