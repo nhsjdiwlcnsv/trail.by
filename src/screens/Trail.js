@@ -1,6 +1,5 @@
 import React from 'react'
-import scrollToTop from '../scripts/scrollToTop'
-import '../css/Trail.css'
+import styles from '../css/Trail.module.css'
 import photos from "../constants/photos"
 import texts from "../constants/texts"
 import Footer from "../navigation/Footer";
@@ -12,14 +11,11 @@ const Trail = props => {
         .replace('/ecotrail/', '')
         .replace(/([-_]\w)/g, g => g[1].toUpperCase())
 
-    scrollToTop()
-
     return (
-        <div className="containerTrail">
-            <div className="content1">
-                <div className="container">
+        <div className={styles.containerTrail}>
+            <div className={styles.content1}>
+                <div className={styles.container}>
                     <svg
-                        className="background-path"
                         width="1600"
                         height="887.5"
                     >
@@ -31,7 +27,6 @@ const Trail = props => {
                             >
                                 <image
                                     height="100%"
-                                    className="introImage"
                                     href={photos[pathName].background1}
                                 />
                             </pattern>
@@ -42,7 +37,6 @@ const Trail = props => {
                             >
                                 <image
                                     height="100%"
-                                    className="introImage"
                                     href={photos[pathName].background2}
                                 />
                             </pattern>
@@ -54,7 +48,6 @@ const Trail = props => {
                             >
                                 <image
                                     height="100%"
-                                    className="introImage"
                                     href={photos[pathName].background3}
                                 />
                             </pattern>
@@ -83,22 +76,22 @@ const Trail = props => {
                             <use href="#image3" x="733" y="26" width="869" height="861"/>
                         </g>
                     </svg>
-                    <p className="trail-title">{texts[pathName].name}</p>
+                    <p className={styles.trailTitle}>{texts[pathName].name}</p>
                 </div>
-                <div className="forest-icons">
-                    {photos[pathName].icons.icon1 != null ?<img className="trail-icon" alt="icon" src={photos[pathName].icons.icon1}/> : null}
-                    {photos[pathName].icons.icon2 != null ?<img className="trail-icon" alt="icon" src={photos[pathName].icons.icon2}/> : null}
-                    {photos[pathName].icons.icon3 != null ?<img className="trail-icon" alt="icon" src={photos[pathName].icons.icon3}/> : null}
-                    {photos[pathName].icons.icon4 != null ?<img className="trail-icon" alt="icon" src={photos[pathName].icons.icon4}/> : null}
-                    {photos[pathName].icons.icon5 != null ?<img className="trail-icon" alt="icon" src={photos[pathName].icons.icon5}/> : null}
+                <div className={styles.forestIcons}>
+                    {photos[pathName].icons.icon1 != null ?<img className={styles.trailIcon} alt="icon" src={photos[pathName].icons.icon1}/> : null}
+                    {photos[pathName].icons.icon2 != null ?<img className={styles.trailIcon} alt="icon" src={photos[pathName].icons.icon2}/> : null}
+                    {photos[pathName].icons.icon3 != null ?<img className={styles.trailIcon} alt="icon" src={photos[pathName].icons.icon3}/> : null}
+                    {photos[pathName].icons.icon4 != null ?<img className={styles.trailIcon} alt="icon" src={photos[pathName].icons.icon4}/> : null}
+                    {photos[pathName].icons.icon5 != null ?<img className={styles.trailIcon} alt="icon" src={photos[pathName].icons.icon5}/> : null}
                 </div>
             </div>
-            <div className="g-info">
-                <div className="g-text">
-                    <p className="general-title">General information</p>
-                    <p className="general-text">{texts[pathName].general}</p>
+            <div className={styles.gInfo}>
+                <div className={styles.gText}>
+                    <p className={styles.generalTitle}>General information</p>
+                    <p className={styles.generalText}>{texts[pathName].general}</p>
                 </div>
-                <div className="first-image">
+                <div>
                     <svg
                         width="687"
                         height="1111"
@@ -112,7 +105,6 @@ const Trail = props => {
                             >
                                 <image
                                     height="100%"
-                                    className="introImage"
                                     href={photos[pathName].content1}
                                 />
                             </pattern>
@@ -123,14 +115,14 @@ const Trail = props => {
                     </svg>
                 </div>
             </div>
-            <div className="main-content-container">
-                <div className="about-the-trail">
-                    <div className="part1">
-                        <p className="p-title">About the trail</p>
-                        <p className="p-content">{texts[pathName].content1.paragraph1}</p>
-                        <p className="p-content">{texts[pathName].content1.paragraph2}</p>
+            <div className={styles.mainContentContainer}>
+                <div>
+                    <div className={styles.part1}>
+                        <p className={styles.pTitle}>About the trail</p>
+                        <p className={styles.pContent}>{texts[pathName].content1.paragraph1}</p>
+                        <p className={styles.pContent}>{texts[pathName].content1.paragraph2}</p>
                     </div>
-                    <div className="part2">
+                    <div className={styles.part2}>
                         <svg
                             width="550"
                             height="733"
@@ -145,7 +137,6 @@ const Trail = props => {
                                     <image
                                         width="100%"
                                         height="100%"
-                                        className="introImage"
                                         href={photos[pathName].content2}
                                     />
                                 </pattern>
@@ -154,23 +145,23 @@ const Trail = props => {
                                 d="M159.542 30.1527L0 0V615.505L198.473 732.061L469.084 652.672L516.412 509.924L455.725 368.321L550 196.947L397.71 0L159.542 30.1527Z"
                                 fill="url(#pattern5)"/>
                         </svg>
-                        <div className="p-content-container">
-                            <p className="p-content">{texts[pathName].content2.paragraph1}</p>
-                            <p className="p-content">{texts[pathName].content2.paragraph2}</p>
-                            <p className="p-content">{texts[pathName].content2.paragraph3}</p>
+                        <div className={styles.pContentContainer}>
+                            <p className={styles.pContent}>{texts[pathName].content2.paragraph1}</p>
+                            <p className={styles.pContent}>{texts[pathName].content2.paragraph2}</p>
+                            <p className={styles.pContent}>{texts[pathName].content2.paragraph3}</p>
                         </div>
                     </div>
-                    <div className="part3">
-                        <div className="gallery">
-                            <p>Gallery</p>
+                    <div className={styles.part3}>
+                        <div>
+                            <p className={styles.galleryText}>Gallery</p>
                         </div>
-                        <div className="photos">
-                            <img className="gallery-img" src={photos[pathName].background1} alt="" />
-                            <img className="gallery-img" src={photos[pathName].background2} alt="" />
-                            <img className="gallery-img" src={photos[pathName].background3} alt="" />
-                            <img className="gallery-img" src={photos[pathName].content3} alt="" />
-                            <img className="gallery-img" src={photos[pathName].content4} alt="" />
-                            <img className="gallery-img" src={photos[pathName].content5} alt="" />
+                        <div className={styles.photos}>
+                            <img className={styles.galleryImg} src={photos[pathName].background1} alt="" />
+                            <img className={styles.galleryImg} src={photos[pathName].background2} alt="" />
+                            <img className={styles.galleryImg} src={photos[pathName].background3} alt="" />
+                            <img className={styles.galleryImg} src={photos[pathName].content3} alt="" />
+                            <img className={styles.galleryImg} src={photos[pathName].content4} alt="" />
+                            <img className={styles.galleryImg} src={photos[pathName].content5} alt="" />
                         </div>
                     </div>
                 </div>

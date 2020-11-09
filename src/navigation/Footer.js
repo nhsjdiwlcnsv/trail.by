@@ -1,10 +1,10 @@
 import React from "react";
-import '../css/Footer.css'
+import styles from '../css/Footer.module.css'
 
 
 const Footer = () => {
     return (
-        <div className="footer">
+        <div className={styles.footer}>
             <svg
                 width="1600"
                 height="336"
@@ -16,8 +16,8 @@ const Footer = () => {
                     fill="#00BC71"
                 />
             </svg>
-            <p className="first-line">Designed by Mikhail Shkarubski</p>
-            <p className="second-line">For HSE Global Scholarship Competition</p>
+            <p className={styles.firstLine}>Designed by Mikhail Shkarubski</p>
+            <p className={styles.secondLine}>For HSE Global Scholarship Competition</p>
         </div>
     )
 }

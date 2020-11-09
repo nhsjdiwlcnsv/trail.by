@@ -1,6 +1,6 @@
 import React from "react";
-import '../css/TrailCard.css'
-import { Link } from "react-router-dom"
+import styles from '../css/TrailCard.module.css'
+import Link from "next/link"
 
 
 const TrailCard = props => {
@@ -13,32 +13,32 @@ const TrailCard = props => {
     let [trailName] = React.useState(props.trailName)
 
     return (
-        <div className="card">
-            <div className="top-background">
-                <img alt="background" src={background}/>
-                <div className="title-container">
-                    <p className="title">{title}</p>
+        <div className={styles.card}>
+            <div className={styles.topBackground}>
+                <img className={styles.topBackgroundImg} alt="background" src={background}/>
+                <div className={styles.titleContainer}>
+                    <p className={styles.title}>{title}</p>
                 </div>
             </div>
-            <div className="bottom-content">
-                <div className="params">
-                    <div className="param-section">
-                        <p className="param-title">Region</p>
-                        <p className="param-value" id="region">{region}</p>
+            <div className={styles.bottomContent}>
+                <div className={styles.params}>
+                    <div className={styles.paramSection}>
+                        <p className={styles.paramTitle}>Region</p>
+                        <p className={styles.paramValue} id="region">{region}</p>
                     </div>
-                    <div className="param-section">
-                        <p className="param-title">Type</p>
-                        <p className="param-value" style={{color: type === "Forest" ? "#00BC71" : "#8BBC00"}}>
+                    <div className={styles.paramSection}>
+                        <p className={styles.paramTitle}>Type</p>
+                        <p className={styles.paramValue} style={{color: type === "Forest" ? "#00BC71" : "#8BBC00"}}>
                             {type}
                         </p>
                     </div>
-                    <div className="param-section">
-                        <p className="param-title">Distance</p>
-                        <p className="param-value" id="distance">{distance}</p>
+                    <div className={styles.paramSection}>
+                        <p className={styles.paramTitle}>Distance</p>
+                        <p className={styles.paramValue} id="distance">{distance}</p>
                     </div>
                 </div>
-                <div className="see-more-link">
-                    <Link className="see-more-card" to={`/ecotrail/${trailName}`}>
+                <div className={styles.seeMoreLink}>
+                    <Link className="seeMoreCard" href={`/ecotrail/${trailName}`}>
                         See more
                     </Link>
                 </div>

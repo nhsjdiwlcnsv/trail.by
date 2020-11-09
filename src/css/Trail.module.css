@@ -1,0 +1,143 @@
+.containerTrail {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+    font-family: Montserrat, sans-serif;
+}
+
+.content1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.trailTitle {
+    position: absolute;
+    font-family: Montserrat, sans-serif;
+    font-size: 112px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.forestIcons {
+    margin-top: 5%;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.trailIcon {
+    width: 150px;
+    height: auto;
+}
+
+.gInfo {
+    margin-top: 10%;
+    float: right;
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.gText {
+    width: 40%;
+    margin-right: 10%;
+}
+
+.generalText {
+    font-family: Montserrat medium, sans-serif;
+    font-size: 30px;
+    color: var(--text);
+}
+
+.generalTitle {
+    font-family: Montserrat medium, sans-serif;
+    font-size: 36px;
+    color: var(--text-marked);
+}
+
+.mainContentContainer {
+    margin-top: 20%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.part1 {
+    margin-left: 10%;
+    width: 55%;
+}
+
+.pTitle {
+    font-family: Montserrat medium, sans-serif;
+    font-size: 40px;
+    color: var(--text-marked);
+}
+
+.pContent {
+    font-family: Montserrat medium, sans-serif;
+    font-size: 27px;
+    color: var(--text);
+}
+
+.part2 {
+    margin-top: 7%;
+    display: flex;
+}
+
+.pContentContainer {
+    margin-left: 5%;
+    width: 50%;
+}
+
+.part3 {
+    margin: 10% 0 0 5%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.galleryText {
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+    font-size: 60px;
+    color: var(--text-marked);
+}
+
+.photos {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.galleryImg {
+    margin-top: 7%;
+    width: 400px;
+    height: 580px;
+    border-radius: 50px;
+    overflow: hidden;
+    object-fit: cover;
+    transition: .2s;
+}
+
+.galleryImg:hover {
+    transform: scale(1.05);
+}

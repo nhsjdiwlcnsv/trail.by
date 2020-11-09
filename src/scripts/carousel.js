@@ -1,28 +1,22 @@
-import bluelakesFirst from '../media/images/BlueLakes/BlueLakes1.jpg'
-import bluelakesSecond from '../media/images/BlueLakes/BlueLakes2.jpg'
-import bluelakesThird from '../media/images/BlueLakes/BlueLakes3.jpg'
-import bluelakesFourth from '../media/images/BlueLakes/BlueLakes4.jpg'
+import React, {useState} from "react";
 
-let n = 0;
-let images = [];
 
-images[0] = bluelakesFirst
-images[1] = bluelakesSecond
-images[2] = bluelakesThird
-images[3] = bluelakesFourth
+const carousel = () => {
+    let images = [
+        '/images/ecotrails/BlueLakes/BlueLakes1.jpg',
+        '/images/ecotrails/BlueLakes/BlueLakes2.jpg',
+        '/images/ecotrails/BlueLakes/BlueLakes3.jpg',
+        '/images/ecotrails/BlueLakes/BlueLakes4.jpg'
+    ]
+    let [imageIndex, setImageIndex] = useState()
 
-let switchImage = () => {
-    if (document.getElementById('slide') !== null) {
-        document.getElementById('slide').src = images[n]
-    }
+    React.useEffect( () => {
+        setTimeout(setImageIndex(imageIndex + 1), 2500)
 
-    if (n < images.length - 1) {
-        n++;
-    } else {
-        n = 0;
-    }
+    }, [])
 
-    setTimeout(switchImage, 3000);
+    return (images[imageIndex])
 }
 
-window.onload = switchImage
+
+export default carousel

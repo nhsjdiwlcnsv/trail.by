@@ -1,13 +1,13 @@
 import React from "react";
 import { HiOutlineMoon } from "react-icons/hi"
 import { IconContext } from "react-icons/"
-import '../css/SwitchThemeButton.css'
+import styles from '../css/SwitchThemeButton.module.css'
 
 
 const SwitchThemeButton = props => {
     return (
         <IconContext.Provider value={{className: "moon-outline", size: "3em"}}>
-            <button className="switch-button" onClick={props.onClick}><HiOutlineMoon /></button>
+            <button className={styles.switchButton} onClick={props.onClick}><HiOutlineMoon /></button>
         </IconContext.Provider>
     )
 }

@@ -5,21 +5,21 @@ import anime from "animejs";
 const navbarAnimation = () => {
 
     const navRef = React.useRef(null)
-    let [animationPassed, setIsPassed] = useState(sessionStorage.getItem('animationPassed'));
+    let [animationPassed, setIsPassed] = useState(typeof localStorage == "undefined" ? false : sessionStorage.getItem('animationPassed'));
     React.useEffect(() => {
 
         if (!sessionStorage.getItem('animationPassed')) {
             navRef.current =
                 anime.timeline({ loop: false })
                     .add({
-                        targets: document.getElementsByClassName("nav-item"),
+                        targets: document.querySelectorAll("#nav-item"),
                         translateY: [-15, 0],
                         opacity: [0, 1],
                         duration: 1500,
                         delay: (el, i) => i * 200 + 2100,
                     })
                     .add({
-                        targets: document.getElementsByClassName("nav-logo"),
+                        targets: document.querySelectorAll("#nav-logo"),
                         translateY: [-15, 0],
                         opacity: [0, 1],
                         easing: 'easeOutExpo',

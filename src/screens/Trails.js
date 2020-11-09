@@ -1,50 +1,42 @@
 import React from 'react'
-import '../css/Trails.css'
+import styles from '../css/Trails.module.css'
 import TrailCard from "../components/TrailCard"
-import scrollToTop from '../scripts/scrollToTop'
 import trailsAnimation from "../scripts/trailsAnimations"
 import Footer from "../navigation/Footer";
 import { HiOutlineSearch } from "react-icons/hi"
 import { IconContext } from "react-icons/"
-import Fir from "../media/icons/Fir.svg"
-import Elnya from '../media/images/Elnya/IMG_20200726_140411.jpg'
-import BlueLakes from '../media/images/BlueLakes/BlueLakes1.jpg'
-import Bielakorac from '../media/images/Bielakorac/IMG_20200426_162616.jpg'
-import SvyatyeKrinitsi from '../media/images/SvyatyeKrinitsi/5d8db85a19e81-1-4.jpg'
-import OlmanskieSwamps from '../media/images/OlmanskieSwapms/dsc_0433-1536x1021.jpg'
 
 
 const Trails = () => {
 
-    scrollToTop()
     trailsAnimation()
 
     return (
-        <div className="containerTrails">
-            <div className="container-centered">
-                <div className="search-trails">
-                    <div className="search-container">
-                        <IconContext.Provider value={{className: "search-outline", size: "2.5em"}}>
-                            <input className="search" type="text"/>
+        <div className={styles.containerTrails}>
+            <div className={styles.containerCentered}>
+                <div className={styles.searchTrails}>
+                    <div className={styles.searchContainer}>
+                        <IconContext.Provider value={{className: styles.searchOutline, size: "2.5em"}}>
+                            <input className={styles.search} type="text"/>
                             <HiOutlineSearch />
                         </IconContext.Provider>
                     </div>
                 </div>
-                <div className="chosen-params">
+                <div className={styles.chosenParams}>
                     
                 </div>
-                <div className="divider">
-                    <img alt="fir-icon" src={Fir} />
-                    <img alt="fir-icon" src={Fir} />
-                    <img alt="fir-icon" src={Fir} />
+                <div className={styles.divider}>
+                    <img alt="fir-icon" src="../../public/images/icons/Fir.svg" />
+                    <img alt="fir-icon" src="../../public/images/icons/Fir.svg" />
+                    <img alt="fir-icon" src="../../public/images/icons/Fir.svg" />
                 </div>
-                <div className="results">
+                <div className={styles.results}>
                     <TrailCard
                         title="Elnya"
                         region="Vitebsk"
                         type="Swamp"
                         distance="4 km 6 km"
-                        background={Elnya}
+                        background="/images/ecotrails/Elnya/IMG_20200726_140411.jpg"
                         trailName="elnya"
                     />
                     <TrailCard
@@ -52,7 +44,7 @@ const Trails = () => {
                         region="Minsk"
                         type="Forest"
                         distance="4 km 7 km"
-                        background={BlueLakes}
+                        background="/images/ecotrails/BlueLakes/BlueLakes1.jpg"
                         trailName="blue-lakes"
                     />
                     <TrailCard
@@ -60,7 +52,7 @@ const Trails = () => {
                         region="Minsk"
                         type="Forest"
                         distance="1.4 km"
-                        background={Bielakorac}
+                        background="/images/ecotrails/Bielakorac/IMG_20200426_162616.jpg"
                         trailName="bielakorac"
                     />
                     <TrailCard
@@ -68,7 +60,7 @@ const Trails = () => {
                         region="Minsk"
                         type="Forest"
                         distance="250 m"
-                        background={SvyatyeKrinitsi}
+                        background="/images/ecotrails/SvyatyeKrinitsi/5d8db85a19e81-1-4.jpg"
                         trailName="svyatye-krinitsi"
                     />
                     <TrailCard
@@ -76,7 +68,7 @@ const Trails = () => {
                         region="Brest"
                         type="Swamp"
                         distance="1.5 km"
-                        background={OlmanskieSwamps}
+                        background="/images/ecotrails/OlmanskieSwapms/dsc_0433-1536x1021.jpg"
                         trailName="olmanskie-swamps"
                     />
                 </div>

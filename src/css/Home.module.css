@@ -1,0 +1,239 @@
+.containerHome {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Montserrat, sans-serif;
+    color: var(--text);
+}
+
+.greeting {
+    width: auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.greetingText {
+    margin: 80px 0 0 0;
+    font-size: 72px;
+    font-family: Montserrat medium, sans-serif;
+    line-height: 102px;
+    color: var(--text) ;
+}
+
+.spanTitle {
+    color: var(--text-marked);
+}
+
+.hint {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.hintText {
+    font-family: Montserrat medium, sans-serif;
+    font-size: 28px;
+    color: var(--text-subtitle);
+}
+
+.latest {
+    margin-top: 300px;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titleBrief {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.latestRelease {
+    margin: 0;
+    font-family: Montserrat, sans-serif;
+    font-weight: 900;
+    font-size: 96px;
+    letter-spacing: .2em;
+}
+
+.latestTitle {
+    margin: 50px 0 0 0;
+    color: var(--text-marked);
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+    font-size: 112px;
+    letter-spacing: .4em;
+}
+
+.latestDate {
+    margin: 50px 0;
+    font-family: Montserrat medium, sans-serif;
+    font-size: 42px;
+    letter-spacing: .2em;
+}
+
+.intro {
+    margin: 300px 0 0 0;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+}
+
+.intro p {
+    margin: 0;
+    width: 40%;
+    font-family: Montserrat medium, sans-serif;
+    font-size: 32px;
+}
+
+.intro svg {
+    margin-left: 200px;
+}
+
+.note {
+    margin: 300px 0 0 0;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.noteSign {
+    margin: 0 0 50px 0;
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+    font-size: 60px;
+    color: var(--text-marked);
+}
+
+.noteText {
+    font-family: Montserrat medium, sans-serif;
+    font-size: 36px;
+    width: 75%;
+}
+
+.noteIcons {
+    margin: 125px 0 0 0;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.noteIcon {
+    width: 140px;
+    height: auto;
+}
+
+.noteIconIake {
+    width: 160px;
+    height: auto;
+}
+
+.more {
+    margin: 300px 0 0 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.seeMore {
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    font-size: 56px;
+    color: var(--text);
+    text-decoration: none;
+}
+
+.seeMore::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 12px;
+    background: var(--text-marked);
+}
+
+.seeMore:hover::after {
+    width: 0;
+}
+
+.recommended {
+    margin-top: 350px;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.recommendedText {
+    font-family: Montserrat, sans-serif;
+    font-weight: 900;
+    font-size: 96px;
+}
+
+.recommendedBrief {
+    margin: 15% 0 0 0;
+    width: 100%;
+    height: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.description {
+    width: 40%;
+    height: 62%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    overflow: hidden;
+    background: var(--card);
+}
+
+.description p {
+    width: 90%;
+    height: 85%;
+    font-family: Montserrat medium, sans-serif;
+    font-size: 25px;
+    line-height: 130%;
+    color: var(--text);
+}
+
+.dark {
+    font-size: 35px;
+    line-height: 130%;
+    color: var(--text)
+}
+
+.carousel {
+    width: 55%;
+    height: 62%;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.carouselImage {
+    width: 100%;
+}
+
+.recommended2 {
+    margin-top: 500px;
+}
+
+.recommended2Text {
+    font-family: Montserrat, sans-serif;
+    font-size: 80px;
+    font-weight: 900;
+}

@@ -1,5 +1,5 @@
 import React from 'react';
-import '../css/AboutInfo.css';
+import styles from '../css/AboutInfo.module.css';
 
 class AboutInfo extends React.Component {
 
@@ -16,15 +16,15 @@ class AboutInfo extends React.Component {
 
     render () {
         return (
-            <div className={"info-container " + this.state.position}>
-                <p className="name">{this.state.name}</p>
-                <div className="section">
-                    <p className="header">Phone number</p>
-                    <p className="number">{this.state.number}</p>
+            <div className={styles.infoСontainer + this.state.position}>
+                <p className={styles.name}>{this.state.name}</p>
+                <div className={styles.section}>
+                    <p className={styles.header}>Phone number</p>
+                    <p className={styles.number}>{this.state.number}</p>
                 </div>
-                <div className="section">
-                    <p className="header">Email</p>
-                    <p className="email">{this.state.email}</p>
+                <div className={styles.section}>
+                    <p className={styles.header}>Email</p>
+                    <p className={styles.email}>{this.state.email}</p>
                 </div>
             </div>
         )

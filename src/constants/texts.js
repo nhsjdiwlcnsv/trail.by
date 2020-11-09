@@ -1,4 +1,3 @@
-
 const photos = {
     elnya: {
         name: "Elnya",

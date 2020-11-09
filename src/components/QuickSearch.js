@@ -1,26 +1,16 @@
 import React from 'react';
-import '../css/QuickSearch.css'
+import styles from '../css/QuickSearch.module.css'
+import Link from "next/link";
 
-class QuickSearch extends React.Component {
+const QuickSearch = ({title, link}) => {
 
-    constructor(props) {
-        super(props);
-
-        this.state = {
-            title: this.props.title,
-            link: this.props.link,
-        }
-    }
-
-    render () {
-        return (
-            <a href={this.state.link}>
-                <div className="tag">
-                    <p>{this.state.title}</p>
-                </div>
-            </a>
-        )
-    }
+    return (
+        <Link className={styles.link} href={link} >
+            <div className={styles.tag}>
+                <p className={styles.text}>{title}</p>
+            </div>
+        </Link>
+    )
 }
 
 export default QuickSearch;

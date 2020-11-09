@@ -1,0 +1,33 @@
+.infoСontainer {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    font-family: Montserrat, sans-serif;
+}
+
+.name {
+    color: var(--text);
+    font-weight: 900;
+    font-size: 54px;
+    margin: 0;
+}
+
+.section {
+    margin: 25px 0 0 0;
+}
+
+.header {
+    font-size: 28px;
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+    color: var(--text-subtitle);
+    margin: 0;
+}
+
+.number, .email {
+    margin: 10px 0 0 0;
+    font-size: 28px;
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+    color: var(--text);
+}

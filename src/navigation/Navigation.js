@@ -1,33 +1,41 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
-import Logo from '../media/logo/Logo.svg'
-import LogoBlack from '../media/logo/LogoBlack.svg'
-import navbarAnimation from "../scripts/navbarAnimations";
-import '../css/Navigation.css'
-import { ThemeContext } from "../App";
+import React, {useContext, useState} from 'react';
+import Link from 'next/link';
+import styles from '../css/Navigation.module.css'
+import { ThemeContext } from "../pages/_app";
 
 
 const Navigation = () => {
 
-    navbarAnimation()
+    const theme = useContext(ThemeContext)
 
     return (
-        <ThemeContext.Consumer>
-            {theme =>
-                <div className="nav">
-                    <div className="item nav-logo">
-                        <NavLink to="/">
-                            <img className="logo" alt="logo" src={theme.name === "light" ? Logo : LogoBlack}/>
-                        </NavLink>
-                    </div>
-                    <div className="item nav-item first"><NavLink className="link" to="/contact">Contact</NavLink></div>
-                    <div className="item nav-item second"><NavLink className="link" to="/about">About us</NavLink></div>
-                    <div className="item nav-item third"><NavLink className="link" to="/trails">All trails</NavLink>
-                    </div>
-                </div>
-            }
-        </ThemeContext.Consumer>
-    );
+        <div className={styles.nav}>
+            <div id="nav-logo">
+                <Link href="/">
+                    <img
+                        className={styles.logo}
+                        alt="logo"
+                        src={theme.name === "light" ? '/images/logo/Logo.svg' : '/images/logo/LogoBlack.svg'}
+                    />
+                </Link>
+            </div>
+            <div id="nav-item" className={styles.navItem}>
+                <Link className={styles.link} href="/contact">
+                    <a className={styles.link}>Contact</a>
+                </Link>
+            </div>
+            <div id="nav-item" className={styles.navItem}>
+                <Link href="/about">
+                    <a className={styles.link}>About us</a>
+                </Link>
+            </div>
+            <div id="nav-item" className={styles.navItem}>
+                <Link href="/trails">
+                    <a className={styles.link}>All trails</a>
+                </Link>
+            </div>
+        </div>
+    )
 }
 
 export default Navigation;

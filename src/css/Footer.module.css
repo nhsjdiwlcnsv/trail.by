@@ -1,0 +1,20 @@
+.footer {
+    margin-top: 25%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.firstLine, .secondLine {
+    margin-top: 5%;
+    position: absolute;
+    font-family: Montserrat medium, sans-serif;
+    font-size: 32px;
+    color: #FFFFFF;
+}
+
+.secondLine {
+    margin-top: 12%;
+    font-size: 20px;
+}

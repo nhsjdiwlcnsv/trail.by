@@ -3,7 +3,7 @@ import palettes from '../constants/colorPalettes'
 
 
 const switchTheme = () => {
-    let [paletteName, setPaletteName] = useState(localStorage.getItem('currentPalette'));
+    let [paletteName, setPaletteName] = useState(typeof localStorage == "undefined" ? 'light' : localStorage.getItem('currentPalette'));
     React.useEffect(() => {
         localStorage.setItem('currentPalette', paletteName)
     }, [paletteName])
