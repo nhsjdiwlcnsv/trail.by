@@ -1,101 +1,76 @@
 import React from 'react'
-import styles from '../css/Home.module.css'
-import Link from 'next/link'
-import QuickSearch from '../components/QuickSearch'
-import path from '../scripts/paths'
-import date from '../scripts/getDate'
-import { greetingAndHintAnimation, quickSearchAnimation } from '../scripts/homeAnimations'
-import Footer from "../navigation/Footer";
-import carousel from "../scripts/carousel"
+import styles from './Index.module.css'
+import { Carousel } from 'react-responsive-carousel'
+import Greeting from '../components/main/Greeting'
+import Elnya from '../components/main/Elnya'
+import BlueLakes from '../components/main/BlueLakes'
 
+let galery = [
+  '/images/ecotrails/Elnya/IMG_20200726_133148.jpg',
+  '/images/ecotrails/Elnya/IMG_20200726_140456.jpg',
+  '/images/ecotrails/Elnya/IMG_20200726_233123.jpg',
+  '/images/ecotrails/Elnya/IMG_20200726_340603.jpg',
+  '/images/ecotrails/Elnya/IMG_20200726_133749.jpg',
+  '/images/ecotrails/Elnya/IMG_20200726_135321.jpg',
+  '/images/ecotrails/Elnya/IMG_20200726_131647.jpg',
+  '/images/ecotrails/Elnya/Elnya1.jpg',
+  '/images/ecotrails/Elnya/IMG_20200726_140411.jpg',
+  '/images/ecotrails/Bielakorac/IMG_20200712_120907.jpg',
+  '/images/ecotrails/Bielakorac/derevo-u-ekotropy-belokorecz-768x1155.jpg',
+  '/images/ecotrails/Bielakorac/IMG_20200426_145034.jpg',
+  '/images/ecotrails/Bielakorac/IMG_20200426_145613.jpg',
+  '/images/ecotrails/Bielakorac/vid-na-reku-s-ekotropy-2-1024x681.jpg',
+  '/images/ecotrails/Bielakorac/Naliboki-3.jpg',
+  '/images/ecotrails/SvyatyeKrinitsi/296A5392.jpg',
+  '/images/ecotrails/SvyatyeKrinitsi/296A3844.jpg',
+  '/images/ecotrails/SvyatyeKrinitsi/5d8db85a19e81-1-4.jpg',
+  '/images/ecotrails/SvyatyeKrinitsi/296A5513.jpg',
+  '/images/ecotrails/OlmanskieSwapms/ельня-62_ клюква.jpg',
+  '/images/ecotrails/OlmanskieSwapms/IMG_20191102_113352.jpg',
+  '/images/ecotrails/OlmanskieSwapms/IMG_20190713_124148.jpg',
+  '/images/ecotrails/OlmanskieSwapms/a10.jpg',
+  '/images/ecotrails/OlmanskieSwapms/IMG_20200726_133749.jpg',
+  '/images/ecotrails/OlmanskieSwapms/IMG_20200620_130352.jpg',
+  '/images/ecotrails/BlueLakes/BlueLakes7.jpg',
+  '/images/ecotrails/BlueLakes/BlueLakes3.jpg',
+  '/images/ecotrails/BlueLakes/BlueLakes6.jpg',
+  '/images/ecotrails/BlueLakes/BlueLakes8.jpg',
+  '/images/ecotrails/BlueLakes/BlueLakes2.jpg'
+]
 
-const Home = () => {
-
-    greetingAndHintAnimation()
-    quickSearchAnimation()
-    carousel()
-
-    return (
-        <div className={styles.containerHome}>
-            <div className={styles.greeting}>
-                <div className="greeting-animated">
-                    <p className={styles.greetingText} id="greeting">Welcome to <span className={styles.spanTitle}>Trail</span>!</p>
-                </div>
-                <div className={styles.hint}>
-                    <p id="animated-hint" className={styles.hintText}>Go to:</p>
-                    <div className="animated-search1"><QuickSearch title="Elnya" link="/#elnya"/></div>
-                    <div className="animated-search2"><QuickSearch title="Blue lakes" link="/#bluelakes"/></div>
-                    <div className="animated-search3"><QuickSearch title="Galleries" link="/#galleries"/></div>
-                </div>
-            </div>
-            <div className={styles.latest} id="elnya">
-                <div className={styles.titleBrief}>
-                    <p className={styles.latestRelease}>Meet <span className={styles.spanTitle}>Elnya</span></p>
-                    <p className={styles.latestDate}>{date()}</p>
-                </div>
-                <div className={styles.intro}>
-                    <p><span className={styles.spanTitle}>Elnya</span> is called one of the biggest lungs of Europe and is very old - 9000 y.o. Its pure air, vast mires views, endless cranberries plantations and fragrance - all worth coming for 3 hours. Highly recommended for nature lovers!</p>
-                    <svg
-                        width="827.5"
-                        height="644.85"
-                        viewBox="0 0 827.5 644.85"
-                    >
-                        <defs>
-                            <pattern
-                                id="pattern"
-                                height="100%"
-                                width="100%"
-                            >
-                                <image href='/images/ecotrails/Elnya/Elnya1.jpg'/>
-                            </pattern>
-                        </defs>
-                        <path d={path()} fill="url(#pattern)"/>
-                    </svg>
-                </div>
-                <div className={styles.note}>
-                    <p className={styles.noteSign}>Note</p>
-                    <p className={styles.noteText}>Here you can find both coniferous trees (pines, for instance), and deciduous species, such as birches. Also here are some small lakes and ponds, that are separated by some swamp vegetation.</p>
-                    <div className={styles.noteIcons}>
-                        <img className={styles.noteIcon} alt="note-icon" src='/images/icons/Frame.svg'/>
-                        <img className={styles.noteIcon} alt="note-icon" src='/images/icons/Frame-1.svg'/>
-                        <img className={styles.noteIcon} alt="note-icon" src='/images/icons/Frame-2.svg'/>
-                        <img className={styles.noteIcon + ' ' + styles.noteIconLake} alt="note-icon" src='/images/icons/Frame-3.svg'/>
-                    </div>
-                    <div className={styles.more}>
-                        <Link href="/ecotrail/elnya" className={styles.seeMore}>See more...</Link>
-                    </div>
-                </div>
-            </div>
-            <div className={styles.recommended} id="bluelakes">
-                <p className={styles.recommendedText}>We also recommend you visiting <span className={styles.spanTitle}>Blue Lakes</span>:</p>
-                <div className={styles.recommendedBrief}>
-                    <div className={styles.description}>
-                        <p>
-                            <span className={styles.dark}>Ecological trail "<span className={styles.spanTitle}>Blue Lakes</span>"</span>
-                            <br/>
-                            <br/>
-                            is located on the territory of the Narochansky National Park in the Myadel district, 500 m beyond the village of Olshevo.
-                            <br/>
-                            <br/>
-                            Each time you come to this amazing place, you will discover something new, this is a unique hilly-lake complex with vast forests, an abundance of springs and truly unique lakes.
-                        </p>
-                    </div>
-                    <div className={styles.carousel}>
-                        <div className={styles.carouselItem}>
-                            <img className={styles.carouselImage} id="slide" alt="slide"/>
-                        </div>
-                    </div>
-                    <div className={styles.more}>
-                        <Link href="/ecotrail/blue-lakes" className={styles.seeMore}>See more...</Link>
-                    </div>
-                </div>
-            </div>
-            <div className={styles.recommended2} id="galleries">
-                <p className={styles.recommended2Text}><span className={styles.spanTitle}>Galleries</span> are in progress...</p>
-            </div>
-            <Footer />
-        </div>
-    );
+export default function Home() {
+  return (
+    <div className={styles.container}>
+      <Greeting />
+      <Elnya />
+      <BlueLakes />
+      <div className={styles.text}>
+        Check out some images from our ecotrails
+              </div>
+      <Carousel
+        className={styles.carousel}
+        dynamicHeight
+        dynamicWidth
+        showThumbs={false}
+        infiniteLoop
+        autoPlay
+      >
+        {galery.map((e) => (
+          <div
+            style={{
+              maxHeight: '400px'
+            }}
+          >
+            <img
+              src={e}
+              styles={{
+                maxWidth: '100%',
+                maxHeight: '100%'
+              }}
+            />
+          </div>
+        ))}
+      </Carousel>
+    </div>
+  )
 }
-
-export default Home;

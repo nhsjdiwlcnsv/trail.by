@@ -1,0 +1,25 @@
+.tag {
+  padding: 0 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 38px;
+  border-radius: 50px;
+  background: var(--quick-search);
+}
+
+.notAnimated {
+  transform: translateY(-50px);
+  opacity: 0;
+}
+
+.text {
+  font-family: Montserrat medium, sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.tag:hover {
+  background: #00bc71;
+}

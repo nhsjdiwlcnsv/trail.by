@@ -1,0 +1,33 @@
+.root {
+  width: auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.title {
+  margin: 80px 0 0 0;
+  font-size: 72px;
+  font-family: Montserrat medium, sans-serif;
+  line-height: 102px;
+  color: var(--text);
+}
+
+.marked {
+  color: var(--text-marked);
+}
+
+.hint {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.hintTitle {
+  font-family: Montserrat medium, sans-serif;
+  font-size: 28px;
+  color: var(--text-subtitle);
+}

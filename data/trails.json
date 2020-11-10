@@ -1,0 +1,42 @@
+[
+  {
+    "title": "Elnya",
+    "region": "Vitebsk",
+    "type": "Swamp",
+    "distance": "4 km 6 km",
+    "background": "/images/ecotrails/Elnya/IMG_20200726_140411.jpg",
+    "trailName": "elnya"
+  },
+  {
+    "title": "Blue Lakes",
+    "region": "Minsk",
+    "type": "Forest",
+    "distance": "4 km 7 km",
+    "background": "/images/ecotrails/BlueLakes/BlueLakes1.jpg",
+    "trailName": "blueLakes"
+  },
+  {
+    "title": "Bielakorac",
+    "region": "Minsk",
+    "type": "Forest",
+    "distance": "1.4 km",
+    "background": "/images/ecotrails/Bielakorac/IMG_20200426_162616.jpg",
+    "trailName": "bielakorac"
+  },
+  {
+    "title": "Svyatye Krinitsi",
+    "region": "Minsk",
+    "type": "Forest",
+    "distance": "250 m",
+    "background": "/images/ecotrails/SvyatyeKrinitsi/5d8db85a19e81-1-4.jpg",
+    "trailName": "svyatyeKrinitsi"
+  },
+  {
+    "title": "Olmanskie swamps",
+    "region": "Brest",
+    "type": "Swamp",
+    "distance": "1.5 km",
+    "background": "/images/ecotrails/OlmanskieSwapms/dsc_0433-1536x1021.jpg",
+    "trailName": "olmanskieSwamps"
+  }
+]

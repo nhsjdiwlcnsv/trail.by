@@ -1,0 +1,75 @@
+.root {
+  margin-top: 300px;
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.brief {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.release {
+  margin: 0;
+  font-family: Montserrat, sans-serif;
+  font-weight: 900;
+  font-size: 4em;
+  letter-spacing: 0.2em;
+}
+
+.marked {
+  margin: 50px 0 0 0;
+  color: var(--text-marked);
+  font-family: Montserrat, sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.4em;
+}
+
+.subTitle {
+  color: var(--text-marked);
+  font-family: Montserrat, sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  font-size: 1.4em;
+}
+
+.latestDate {
+  margin: 50px 0;
+  font-family: Montserrat medium, sans-serif;
+  font-size: 42px;
+  letter-spacing: 0.2em;
+}
+
+.intro {
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.intro p {
+  flex: 1;
+  display: block;
+  margin: 0;
+  width: 40%;
+  font-family: Montserrat medium, sans-serif;
+  font-size: 32px;
+  margin-right: 10px;
+
+  min-width: 400px;
+}
+
+.image {
+  flex: 1;
+  min-width: 400px;
+}
+
+.image img {
+  max-width: 100%;
+  max-height: 100%;
+}
+

@@ -1,0 +1,33 @@
+.root {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: 8%;
+}
+
+.subslogan {
+  font-family: Montserrat, sans-serif;
+  font-size: 54px;
+  font-weight: bold;
+  color: var(--text);
+}
+
+.icons {
+  margin-top: 2%;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.icon {
+  transition: 0.2s;
+
+  width: 72px;
+  height: 72px;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+}

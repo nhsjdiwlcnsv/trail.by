@@ -1,0 +1,14 @@
+.root {
+  width: 80%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text {
+  font-family: Montserrat, sans-serif;
+  font-size: 96px;
+  font-weight: 900;
+  color: var(--text);
+}

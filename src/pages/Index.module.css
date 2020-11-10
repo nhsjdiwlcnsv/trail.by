@@ -1,0 +1,30 @@
+.container {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Montserrat, sans-serif;
+    color: var(--text);
+
+}
+
+.carousel {
+    max-width: 100%;
+
+  width: 85%;
+    /* max-height: 100px; */
+}
+
+
+.text {
+/* margin-top: 40% ; */
+
+  width: 85%;
+  display: block;
+  font-family: Montserrat, sans-serif;
+  font-weight: 900;
+  font-size: 5em;
+}
+
+

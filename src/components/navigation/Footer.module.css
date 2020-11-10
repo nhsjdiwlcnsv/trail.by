@@ -1,0 +1,27 @@
+.root {
+  margin-top: 25%;
+  width: calc(100% + 16px);
+  margin-left: -8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: -8px;
+}
+
+.firstLine,
+.secondLine {
+  margin-top: 5%;
+  position: absolute;
+  font-family: Montserrat medium, sans-serif;
+  font-size: 32px;
+  color: #ffffff;
+}
+
+.secondLine {
+  margin-top: 12%;
+  font-size: 20px;
+}
+
+.img {
+  max-width: 100%;
+}
