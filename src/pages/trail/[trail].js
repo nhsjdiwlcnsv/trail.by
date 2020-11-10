@@ -2,68 +2,29 @@ import React from 'react'
 import styles from '../../css/Trail.module.css'
 import HeaderBackground from '../../components/trail/HeaderBackground'
 
-
-export default function Trail({ photos, texts, pathName }) {
+export default function Trail({ trail }) {
   return (
     <div className={styles.containerTrail}>
       <div className={styles.content1}>
         <div className={styles.container}>
-          <HeaderBackground
-            backgrounds={[
-              photos[pathName].background1,
-              photos[pathName].background2,
-              photos[pathName].background3
-            ]}
-          />
-          <p className={styles.trailTitle}>{texts[pathName].name}</p>
+          <HeaderBackground backgrounds={trail.photos.backgrounds} />
+          <p className={styles.trailTitle}>{trail.title}</p>
         </div>
         <div className={styles.forestIcons}>
-          {photos[pathName].icons.icon1 != null ? (
-            <img
-              className={styles.trailIcon}
-              alt="icon"
-              src={photos[pathName].icons.icon1}
-            />
-          ) : null}
-          {photos[pathName].icons.icon2 != null ? (
-            <img
-              className={styles.trailIcon}
-              alt="icon"
-              src={photos[pathName].icons.icon2}
-            />
-          ) : null}
-          {photos[pathName].icons.icon3 != null ? (
-            <img
-              className={styles.trailIcon}
-              alt="icon"
-              src={photos[pathName].icons.icon3}
-            />
-          ) : null}
-          {photos[pathName].icons.icon4 != null ? (
-            <img
-              className={styles.trailIcon}
-              alt="icon"
-              src={photos[pathName].icons.icon4}
-            />
-          ) : null}
-          {photos[pathName].icons.icon5 != null ? (
-            <img
-              className={styles.trailIcon}
-              alt="icon"
-              src={photos[pathName].icons.icon5}
-            />
-          ) : null}
+          {trail.photos.icons.map((e) => (
+            <img className={styles.trailIcon} alt="icon" src={e} key={e} />
+          ))}
         </div>
       </div>
       <div className={styles.gInfo}>
         <div className={styles.gText}>
           <p className={styles.generalTitle}>General information</p>
-          <p className={styles.generalText}>{texts[pathName].general}</p>
+          <p className={styles.generalText}>{trail.texts.general}</p>
         </div>
         <div>
           <img
             height="100%"
-            src={photos[pathName].content1}
+            src={trail.photos.contents[0]}
             style={{
               clipPath:
                 'polygon(100% 0, 100% 100%, 69% 89%, 44% 91%, 19% 78%, 14% 40%, 21% 27%, 20% 7%, 44% 0, 63% 9%)'
@@ -75,33 +36,28 @@ export default function Trail({ photos, texts, pathName }) {
         <div>
           <div className={styles.part1}>
             <p className={styles.pTitle}>About the trail</p>
-            <p className={styles.pContent}>
-              {texts[pathName].content1.paragraph1}
-            </p>
-            <p className={styles.pContent}>
-              {texts[pathName].content1.paragraph2}
-            </p>
+            {trail.texts.content1.map((e) => (
+              <p key={e} className={styles.pContent}>
+                {e}
+              </p>
+            ))}
           </div>
           <div className={styles.part2}>
             <img
               width="100%"
               height="100%"
-              src={photos[pathName].content2}
+              src={trail.photos.contents[1]}
               style={{
                 clipPath:
                   'polygon(0 0, 0 100%, 35% 96%, 60% 81%, 81% 76%, 90% 60%, 80% 46%, 79% 16%, 65% 0, 38% 9%)'
               }}
             />
             <div className={styles.pContentContainer}>
-              <p className={styles.pContent}>
-                {texts[pathName].content2.paragraph1}
-              </p>
-              <p className={styles.pContent}>
-                {texts[pathName].content2.paragraph2}
-              </p>
-              <p className={styles.pContent}>
-                {texts[pathName].content2.paragraph3}
-              </p>
+              {trail.texts.content2.map((e) => (
+                <p key={e} className={styles.pContent}>
+                  {e}
+                </p>
+              ))}
             </div>
           </div>
           <div className={styles.part3}>
@@ -109,36 +65,13 @@ export default function Trail({ photos, texts, pathName }) {
               <p className={styles.galleryText}>Gallery</p>
             </div>
             <div className={styles.photos}>
+              {([...trail.photos.backgrounds, ...trail.photos.contents]).map(e=>
               <img
                 className={styles.galleryImg}
-                src={photos[pathName].background1}
+                src={e}
+                key={e}
                 alt=""
-              />
-              <img
-                className={styles.galleryImg}
-                src={photos[pathName].background2}
-                alt=""
-              />
-              <img
-                className={styles.galleryImg}
-                src={photos[pathName].background3}
-                alt=""
-              />
-              <img
-                className={styles.galleryImg}
-                src={photos[pathName].content3}
-                alt=""
-              />
-              <img
-                className={styles.galleryImg}
-                src={photos[pathName].content4}
-                alt=""
-              />
-              <img
-                className={styles.galleryImg}
-                src={photos[pathName].content5}
-                alt=""
-              />
+              />)}
             </div>
           </div>
         </div>
@@ -148,12 +81,11 @@ export default function Trail({ photos, texts, pathName }) {
 }
 
 export async function getStaticProps(ctx) {
-  console.log(ctx)
+  const trails = (await import('../../../data/trails.json')).default
+
   return {
     props: {
-      photos: (await import('../../constants/photos')).default,
-      texts: (await import('../../constants/texts')).default,
-      pathName: ctx.params.trail
+      trail: trails[ctx.params.trail]
     }
   }
 }
@@ -161,9 +93,9 @@ export async function getStaticProps(ctx) {
 export async function getStaticPaths() {
   const trails = await import('../../../data/trails.json')
   return {
-    paths: trails.default.map((e) => ({
+    paths: Object.keys(trails.default).map((e) => ({
       params: {
-        trail: e.trailName
+        trail: e
       }
     })),
     fallback: false
