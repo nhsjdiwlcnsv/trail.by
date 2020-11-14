@@ -1,27 +1,24 @@
-.root {
-  margin-top: 25%;
-  width: calc(100% + 16px);
-  margin-left: -8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: -8px;
+.footer {
+    margin: 25% -8px 0 -8px;
+    width: calc(100% + 16px);
+    height: 336px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    clip-path: polygon(0 11%, 4% 44%, 24% 15%, 38% 29%, 66% 7%, 80% 27%, 100% 0, 100% 100%, 0% 99%);
+    background: var(--text-marked);
 }
 
 .firstLine,
 .secondLine {
-  margin-top: 5%;
-  position: absolute;
-  font-family: Montserrat medium, sans-serif;
-  font-size: 32px;
-  color: #ffffff;
+    margin-top: 5%;
+    position: absolute;
+    font-family: Montserrat medium, sans-serif;
+    font-size: 32px;
+    color: #ffffff;
 }
 
 .secondLine {
   margin-top: 12%;
   font-size: 20px;
-}
-
-.img {
-  max-width: 100%;
 }

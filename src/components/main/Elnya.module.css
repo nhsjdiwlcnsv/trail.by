@@ -1,75 +1,56 @@
 .root {
-  margin-top: 300px;
-  width: 85%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    margin-top: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .brief {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .release {
-  margin: 0;
-  font-family: Montserrat, sans-serif;
-  font-weight: 900;
-  font-size: 4em;
-  letter-spacing: 0.2em;
+    margin: 0;
+    font-family: Montserrat, sans-serif;
+    font-weight: 900;
+    font-size: 6em;
+    letter-spacing: 0.1em;
 }
 
 .marked {
-  margin: 50px 0 0 0;
-  color: var(--text-marked);
-  font-family: Montserrat, sans-serif;
-  font-weight: bold;
-  letter-spacing: 0.4em;
+    color: var(--text-marked);
 }
 
-.subTitle {
-  color: var(--text-marked);
-  font-family: Montserrat, sans-serif;
-  font-weight: bold;
-  letter-spacing: 0.2em;
-  font-size: 1.4em;
-}
-
-.latestDate {
-  margin: 50px 0;
-  font-family: Montserrat medium, sans-serif;
-  font-size: 42px;
-  letter-spacing: 0.2em;
+.date {
+    margin-top: 75px;
+    font-family: Montserrat medium, sans-serif;
+    font-size: 2.5em;
+    letter-spacing: 0.2em;
 }
 
 .intro {
-  margin-top: 100px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
+    margin-top: 225px;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .intro p {
-  flex: 1;
-  display: block;
-  margin: 0;
-  width: 40%;
-  font-family: Montserrat medium, sans-serif;
-  font-size: 32px;
-  margin-right: 10px;
-
-  min-width: 400px;
+    width: 43%;
+    font-family: Montserrat medium, sans-serif;
+    font-size: 2.1em;
 }
 
 .image {
-  flex: 1;
-  min-width: 400px;
+    flex: 0.9;
 }
 
 .image img {
-  max-width: 100%;
-  max-height: 100%;
+    max-width: 100%;
+    max-height: 100%;
 }
 

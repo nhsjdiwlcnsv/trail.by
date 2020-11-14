@@ -25,7 +25,7 @@ export function useThemeSwitcher() {
 }
 
 export function ThemeProvider({ children, theme }) {
-  return (
+    return (
     <ThemeContext.Provider value={theme}>
       <style>
         {`

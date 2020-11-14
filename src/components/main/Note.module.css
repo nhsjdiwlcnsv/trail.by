@@ -1,43 +1,44 @@
 .root {
-  margin: 300px 0 0 0;
-  display: flex;
-  text-align: center;
-  flex-direction: column;
-  align-items: center;
+    margin: 250px 0 0 0;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .sign {
-  margin: 0 0 50px 0;
-  font-family: Montserrat, sans-serif;
-  font-weight: bold;
-  font-size: 60px;
-  color: var(--text-marked);
-}
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+    font-size: 3.75em;
+    color: var(--text-marked);
+ }
 
 .text {
-  font-family: Montserrat medium, sans-serif;
-  font-size: 36px;
-  width: 75%;
+    font-family: Montserrat medium, sans-serif;
+    font-size: 2.25em;
+    width: 65%;
 }
 
 .icons {
-  margin: 125px 0 0 0;
-  width: 80%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+    margin: 125px 0 0 0;
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .icon {
-  width: 140px;
-  height: auto;
+    width: 140px;
+    height: auto;
 }
 
 .iconLake {
-  width: 160px;
-  height: auto;
+    width: 160px;
+    height: auto;
 }
 
 .more {
-  font-size: 1.75em;
+    margin-top: 300px;
+    font-size: 5.25em;
+    font-weight: 900;
 }
