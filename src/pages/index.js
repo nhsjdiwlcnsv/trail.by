@@ -6,11 +6,11 @@ import BlueLakes from '../components/main/BlueLakes'
 
 
 export default function Home() {
-  return (
-    <div className={styles.container}>
-      <Greeting />
-      <Elnya />
-      <BlueLakes />
-    </div>
-  )
+    return (
+        <div className={styles.container}>
+            <Greeting />
+            <Elnya />
+            <BlueLakes />
+        </div>
+    )
 }

@@ -1,6 +1,6 @@
 .card {
     position: relative;
-    margin-top: 5%;
+    margin: 3% 2%;
     width: 400px;
     height: 580px;
     display: flex;

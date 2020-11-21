@@ -7,10 +7,12 @@ export default function Greeting() {
     return (
         <div className={styles.root}>
             <div>
-                <Anime translateY={[-50, 0]}
-                opacity={[0, 1]}
-                duration={3000}
-                delay={400}>
+                <Anime
+                    translateY={[-50, 0]}
+                    opacity={[0, 1]}
+                    duration={3000}
+                    delay={400}
+                >
                     <div className={styles.title}>
                         Welcome to <span className={styles.marked}>Trail</span>!
                     </div>

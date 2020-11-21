@@ -4,6 +4,7 @@ import NextLink from 'next/link'
 import Anime from "react-anime";
 
 export default function Link({ href, children, className, delay }) {
+
     return (
         <Anime
             translateY={[-15,0]}

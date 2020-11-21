@@ -1,0 +1,6 @@
+.searchButton {
+    left: 23.2%;
+    position: absolute;
+    color: var(--text);
+    cursor: pointer;
+}
