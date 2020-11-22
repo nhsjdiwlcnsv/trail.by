@@ -13,30 +13,36 @@ export default function Trails({ trails }) {
     const realQueryRegexp = new RegExp(realQuery.toLowerCase())
 
     return (
-        <div className={styles.root} style={{"--height-after": 6 + 'px'}}>
-            <div className={styles.searchTrails}>
-                <input
-                    className={styles.search}
-                    type="text"
-                    value={query}
-                    onChange={(e) => setQuery(e.target.value)}
-                />
-                <SearchButton size={'2.5em'} onClick={() => setRealQuery(query)} />
-            </div>
-            <div className={styles.results}>
-                {trails
-                    .filter((e) => realQueryRegexp.test(e.title.toLowerCase()))
-                    .map((trail) => (
-                        <TrailCard
-                            title={trail.title}
-                            region={trail.region}
-                            type={trail.type}
-                            distance={trail.distance}
-                            background={trail.background}
-                            trailName={trail.key}
-                            key={trail.key}
-                        />
-                    ))}
+        <div className={styles.root} style={{"--height-after": 4 + 'px'}}>
+            <div className={styles.centered}>
+                <div className={styles.searchTrails}>
+                    <input
+                        className={styles.search}
+                        type="text"
+                        value={query}
+                        onChange={(e) => setQuery(e.target.value)}
+                    />
+                    <SearchButton size={'2.5em'} onClick={() => setRealQuery(query)} />
+                </div>
+                <p className={styles.header}>
+                    {!realQuery ? 'All ecotrails' : 'Here\'s what we found on request '}
+                    <span className={styles.marked}>{realQuery}</span>:
+                </p>
+                <div className={styles.results}>
+                    {trails
+                        .filter((e) => realQueryRegexp.test(e.title.toLowerCase()))
+                        .map((trail) => (
+                            <TrailCard
+                                title={trail.title}
+                                region={trail.region}
+                                type={trail.type}
+                                distance={trail.distance}
+                                background={trail.background}
+                                trailName={trail.key}
+                                key={trail.key}
+                            />
+                        ))}
+                </div>
             </div>
         </div>
     )

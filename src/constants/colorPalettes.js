@@ -10,7 +10,7 @@ const palettes = {
         quickSearchColor: '#E2E2E2',
         cardColor: '#F2F2F2',
         buttonBackground: '#E2E2E2',
-        shadow: 'rgba(0, 0, 0, 0.2)'
+        shadow: 'rgba(0, 0, 0, 0.25)'
     },
     dark: {
         name: "dark",

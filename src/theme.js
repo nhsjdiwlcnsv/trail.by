@@ -1,34 +1,37 @@
-import { createContext, useState, useEffect, useContext } from 'react'
+import React, { createContext, useState, useEffect, useContext } from 'react'
 import palettes from './constants/colorPalettes'
+
 
 export const ThemeContext = createContext(null)
 
+
 export function useThemeSwitcher() {
-  let [paletteName, setPaletteName] = useState(
-    typeof localStorage == 'undefined'
-      ? 'light'
-      : localStorage.getItem('currentPalette')
-  )
+    let [paletteName, setPaletteName] = useState(
+        typeof localStorage == 'undefined'
+            ? 'light'
+            : localStorage.getItem('currentPalette')
+    )
 
-  useEffect(() => {
-    localStorage.setItem('currentPalette', paletteName)
-  }, [paletteName])
+    useEffect(() => {
+        localStorage.setItem('currentPalette', paletteName)
+    }, [paletteName])
 
-  if (paletteName !== 'dark' && paletteName !== 'light') {
-    setPaletteName('light')
-  }
+    if (paletteName !== 'dark' && paletteName !== 'light') {
+        setPaletteName('light')
+    }
 
-  return [
-    palettes[paletteName || 'light'],
-    () => setPaletteName(paletteName === 'light' ? 'dark' : 'light')
-  ]
+    return [
+        palettes[paletteName || 'light'],
+        () => setPaletteName(paletteName === 'light' ? 'dark' : 'light')
+    ]
 }
 
 export function ThemeProvider({ children, theme }) {
+
     return (
-    <ThemeContext.Provider value={theme}>
-      <style>
-        {`
+        <ThemeContext.Provider value={theme}>
+            <style>
+                {`
                     body {
                         --background-image: ${theme.backgroundImage};
                         --background: ${theme.backgroundColor};
@@ -40,17 +43,18 @@ export function ThemeProvider({ children, theme }) {
                         --card: ${theme.cardColor};
                         --button-background: ${theme.buttonBackground};
                         --shadow: ${theme.shadow};
-                        transition: .2s;
-                                               
+                        transition: .2s;                               
+                          
                         background: var(--background);
                     }
-                    `}
-      </style>
-      {children}
-    </ThemeContext.Provider>
-  )
+                `}
+            </style>
+            {children}
+        </ThemeContext.Provider>
+    )
 }
 
+
 export function useTheme() {
-  return useContext(ThemeContext)
+    return useContext(ThemeContext)
 }

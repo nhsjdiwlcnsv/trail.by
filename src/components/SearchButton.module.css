@@ -4,3 +4,7 @@
     color: var(--text);
     cursor: pointer;
 }
+
+.searchButton:hover {
+    color: var(--text-marked);
+}
