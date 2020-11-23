@@ -20,13 +20,14 @@ export default function Trails({ trails }) {
                         className={styles.search}
                         type="text"
                         value={query}
+                        maxLength="20"
                         onChange={(e) => setQuery(e.target.value)}
                     />
                     <SearchButton size={'2.5em'} onClick={() => setRealQuery(query)} />
                 </div>
-                <p className={styles.header}>
+                <p className={!realQuery ? styles.header : styles.headerSmall}>
                     {!realQuery ? 'All ecotrails' : 'Here\'s what we found on request '}
-                    <span className={styles.marked}>{realQuery}</span>:
+                    <span className={styles.marked}>{!realQuery ? '' : realQuery}</span>
                 </p>
                 <div className={styles.results}>
                     {trails

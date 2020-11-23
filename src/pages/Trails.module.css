@@ -45,6 +45,12 @@
 
 .header {
     width: 90%;
+    font-size: 7.5em;
+    font-weight: 900;
+}
+
+.headerSmall {
+    width: 90%;
     font-size: 6em;
     font-weight: 900;
 }
