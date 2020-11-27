@@ -1,32 +1,51 @@
-.infoСontainer {
+.infoContainer {
+    margin: 10px 10px;
+    position: relative;
+    width: 480px;
+    height: 300px;
     display: flex;
     flex-direction: column;
-    width: 35%;
-    font-family: Montserrat, sans-serif;
+    justify-content: center;
+    border-radius: 50px;
+    box-shadow: 0 0 25px 0 var(--shadow);
+    -webkit-box-shadow: 0 0 25px 0 var(--shadow);
+    -moz-box-shadow: 0 0 25px 0 var(--shadow);
+    overflow: hidden;
+}
+
+.imageCard{
+    position: absolute;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    right: -30px;
+    bottom: 0;
 }
 
 .name {
-    color: var(--text);
-    font-weight: 900;
-    font-size: 54px;
-    margin: 0;
+    margin-left: 10%;
+    font-weight: bold;
+    font-size: 2.2em;
+}
+
+.topSection {
+    margin: -20px 0 0 10%;
 }
 
 .section {
-    margin: 25px 0 0 0;
+    margin: 30px 0 25px 10%;
 }
 
 .header {
-    font-size: 28px;
-    font-family: Montserrat, sans-serif;
-    font-weight: bold;
+    font-size: 1.2em;
+    font-family: Montserrat medium, sans-serif;
     color: var(--text-subtitle);
     margin: 0;
 }
 
 .number, .email {
     margin: 10px 0 0 0;
-    font-size: 28px;
+    font-size: 1.5em;
     font-family: Montserrat, sans-serif;
     font-weight: bold;
     color: var(--text);

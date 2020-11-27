@@ -1,48 +1,34 @@
 .containerAbout {
     margin: 0;
     padding: 0;
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     font-family: Montserrat, sans-serif;
+    overflow: hidden;
 }
 
-.generalInfo {
-    margin: 0;
-    height: 100vh;
-    width: 89%;
+.ourTeamContainer {
+    margin-top: 150px;
+    width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
 }
 
-.animatedText {
-    width: 55%;
-    font-size: 48px;
-    font-weight: bold;
+.ourTeam {
+    margin-left: 8%;
+    font-weight: 900;
+    font-size: 7.5em;
     color: var(--text);
 }
 
-.forest {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    background: var(--background-image);
+.teamCards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
-.top {
-    float: right;
-    margin: 685px 200px 0 0;
-}
-
-.middle {
-    float: left;
-    margin: 355px 0 0 400px;
-}
-
-.down {
-    float: left;
-    margin: 870px 0 0 420px;
+.marked {
+    color: var(--text-marked);
 }

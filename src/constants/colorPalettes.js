@@ -1,7 +1,6 @@
 const palettes = {
     light: {
         name: "light",
-        backgroundImage: '/images/backgrounds/AboutBG.png',
         backgroundColor: '#FFFFFF',
         textColor: '#202020',
         markedTextColor: '#00BC71',
@@ -14,7 +13,6 @@ const palettes = {
     },
     dark: {
         name: "dark",
-        backgroundImage: '/images/backgrounds/AboutBGBlack.png',
         backgroundColor: '#181818',
         textColor: '#FFFFFF',
         markedTextColor: '#00BC71',

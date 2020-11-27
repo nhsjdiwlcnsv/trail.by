@@ -33,7 +33,6 @@ export function ThemeProvider({ children, theme }) {
             <style>
                 {`
                     body {
-                        --background-image: ${theme.backgroundImage};
                         --background: ${theme.backgroundColor};
                         --text: ${theme.textColor};
                         --text-marked: ${theme.markedTextColor};

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import styles from './Trails.module.css'
-import SearchButton from "../components/SearchButton";
+import SearchButton from "../components/trails/SearchButton";
 import { IconContext } from "react-icons/"
 import TrailCard from '../components/trails/TrailCard'
 import Anime from "react-anime";

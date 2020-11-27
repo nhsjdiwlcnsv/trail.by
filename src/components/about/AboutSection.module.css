@@ -1,0 +1,19 @@
+.section {
+    margin-top: 150px;
+    width: 100%;
+}
+
+.sectionTitle {
+    margin-left: 8%;
+    font-weight: 900;
+    font-size: 7em;
+    color: var(--text);
+}
+
+.sectionContent {
+    width: 73%;
+    margin-left: 8%;
+    font-weight: bold;
+    font-size: 1.875em;
+    color: var(--text);
+}
