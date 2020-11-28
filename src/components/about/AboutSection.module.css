@@ -11,9 +11,9 @@
 }
 
 .sectionContent {
-    width: 73%;
     margin-left: 8%;
-    font-weight: bold;
+    width: 73%;
+    font-family: Montserrat medium, sans-serif;
     font-size: 1.875em;
     color: var(--text);
 }

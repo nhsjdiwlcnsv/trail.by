@@ -36,7 +36,7 @@ function TrailCard({ title, region, type, distance, background, trailName }) {
                         <p className={styles.paramValue} id="distance">{distance}</p>
                     </div>
                     <div className={styles.seeMoreLink}>
-                        <Link className="seeMoreCard" href={`/trail/${trailName}`}>See more</Link>
+                        <Link href={`/trail/${trailName}`}>See more</Link>
                     </div>
                 </div>
             </div>
