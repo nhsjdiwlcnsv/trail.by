@@ -1,0 +1,18 @@
+.btw {
+    margin: 300px 0 0 0;
+}
+
+.btwTitle {
+    font-weight: bold;
+    font-size: 5em;
+}
+
+.btwText {
+    width: 75%;
+    font-family: Montserrat medium, sans-serif;
+    font-size: 1.875em;
+}
+
+.marked {
+    color: var(--text-marked);
+}

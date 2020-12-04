@@ -16,7 +16,7 @@
 }
 
 .ourTeam {
-    margin-left: 8%;
+    margin-left: 100px;
     font-weight: 900;
     font-size: 7.5em;
     color: var(--text);
@@ -30,6 +30,5 @@
 }
 
 .marked {
-    font-weight: bold;
     color: var(--text-marked);
 }

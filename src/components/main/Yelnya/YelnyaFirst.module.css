@@ -1,0 +1,35 @@
+.general {
+    margin: 150px 0 0 0;
+}
+
+.generalText {
+    width: 46%;
+    font-family: Montserrat medium, sans-serif;
+    font-size: 1.875em;
+}
+
+.generalTitle {
+    font-weight: bold;
+    font-size: 5em;
+}
+
+.clippedImg {
+    top: 210%;
+    left: 44%;
+    position: absolute;
+    width: 800px;
+    height: 686px;
+    filter: url(#filter0_d);
+    fill: url(#paint1_image);
+}
+
+.seeMoreLink {
+    margin-top: 5%;
+    width: 235px;
+    font-size: 2.5em;
+    font-weight: 600;
+}
+
+.marked {
+    color: var(--text-marked);
+}

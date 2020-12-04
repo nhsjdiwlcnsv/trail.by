@@ -1,29 +1,9 @@
 .root {
-    margin: 250px 0 0 0;
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    align-items: center;
-}
-
-.sign {
-    font-family: Montserrat, sans-serif;
-    font-weight: bold;
-    font-size: 3.75em;
-    color: var(--text-marked);
- }
-
-.text {
-    font-family: Montserrat medium, sans-serif;
-    font-size: 2.25em;
-    width: 65%;
-}
-
-.icons {
-    margin: 125px 0 0 0;
+    margin: 150px 0 0 15%;
     width: 70%;
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     justify-content: space-between;
 }
 
@@ -35,10 +15,4 @@
 .iconLake {
     width: 160px;
     height: auto;
-}
-
-.more {
-    margin-top: 300px;
-    font-size: 5.25em;
-    font-weight: 900;
 }

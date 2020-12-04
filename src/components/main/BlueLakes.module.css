@@ -1,15 +1,21 @@
 .root {
-    margin-top: 300px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin: 300px 0 0 100px;
+}
+
+.bgImg {
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    background: url("/images/backgrounds/MainBL.svg") no-repeat 400px;
+    filter: blur(50px);
 }
 
 .text {
-    width: 85%;
+    z-index: 999;
+    margin: 0;
     font-family: Montserrat, sans-serif;
     font-weight: 900;
-    font-size: 6em;
+    font-size: 7em;
 }
 
 .marked {
@@ -17,38 +23,36 @@
 }
 
 .brief {
-    width: 90%;
+    margin-top: 75px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .description {
-    width: 40%;
-    padding: 20px;
-    border-radius: 50px;
-    background: var(--card);
-}
-
-.description p {
+    z-index: 2;
+    margin: 0;
+    width: 44%;
     font-family: Montserrat medium, sans-serif;
     font-size: 1.8em;
-    line-height: 130%;
-    min-width: 350px;
-}
-
-.title {
-    font-size: 1.5em;
-    line-height: 130%;
 }
 
 .carousel {
-    width: 55%;
-    height: 650px;
+    z-index: 2;
+    margin-left: 7%;
+    width: 550px;
+    height: 675px;
     border-radius: 50px;
     overflow: hidden;
-    min-width: 400px;
+    box-shadow: 0 0 30px 0 var(--shadow);
+    -webkit-box-shadow: 0 0 30px 0 var(--shadow);
+    -moz-box-shadow: 0 0 30px 0 var(--shadow);
+}
+
+.linkContainer {
+    margin-top: 250px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    transform: translateX(-3%);
 }
 
 .more {

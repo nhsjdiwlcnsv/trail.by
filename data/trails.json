@@ -1,22 +1,22 @@
 {
-  "elnya": {
+  "yelnya": {
     "title": "Elnya",
     "region": "Vitebsk",
     "type": "Swamp",
     "distance": "4 km 6 km",
-    "background": "/images/ecotrails/Elnya/IMG_20200726_140411.jpg",
+    "background": "/images/ecotrails/Yelnya/IMG_20200726_140411.jpg",
     "photos": {
       "backgrounds": [
-        "/images/ecotrails/Elnya/IMG_20200726_133148.jpg",
-        "/images/ecotrails/Elnya/IMG_20200726_133749.jpg",
-        "/images/ecotrails/Elnya/IMG_20200726_340603.jpg"
+        "/images/ecotrails/Yelnya/IMG_20200726_133148.jpg",
+        "/images/ecotrails/Yelnya/IMG_20200726_133749.jpg",
+        "/images/ecotrails/Yelnya/IMG_20200726_340603.jpg"
       ],
       "contents": [
-        "/images/ecotrails/Elnya/IMG_20200726_140411.jpg",
-        "/images/ecotrails/Elnya/IMG_20200726_135321.jpg",
-        "/images/ecotrails/Elnya/IMG_20200726_131647.jpg",
-        "/images/ecotrails/Elnya/IMG_20200726_233123.jpg",
-        "/images/ecotrails/Elnya/IMG_20200726_135321.jpg"
+        "/images/ecotrails/Yelnya/IMG_20200726_140411.jpg",
+        "/images/ecotrails/Yelnya/IMG_20200726_135321.jpg",
+        "/images/ecotrails/Yelnya/IMG_20200726_131647.jpg",
+        "/images/ecotrails/Yelnya/IMG_20200726_233123.jpg",
+        "/images/ecotrails/Yelnya/IMG_20200726_135321.jpg"
       ],
       "icons": [
         "/images/icons/Frame.svg",
