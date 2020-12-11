@@ -20,6 +20,7 @@ export default function Trails({ trails }) {
                         className={styles.search}
                         type="text"
                         value={query}
+                        placeholder="Start searching!"
                         maxLength="20"
                         onChange={(e) => setQuery(e.target.value)}
                     />

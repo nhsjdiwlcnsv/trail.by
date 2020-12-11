@@ -16,7 +16,7 @@
 
 .searchTrails {
     height: 100vh;
-    width: calc(100vw - 20px);
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -34,6 +34,7 @@
     font-size: 1.75em;
     color: var(--text);
     transition: .2s;
+    outline: none;
 }
 
 .search:focus, .search:hover {

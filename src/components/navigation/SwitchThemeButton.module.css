@@ -12,6 +12,7 @@
     background: var(--button-background);
     color: var(--text);
     border: none;
+    outline: none;
 }
 
 .button:hover {
