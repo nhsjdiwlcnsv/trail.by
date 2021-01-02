@@ -16,6 +16,14 @@ let MyApp = ({ Component, pageProps }) => {
             <Component {...pageProps} />
             <SwitchThemeButton onClick={() => setTheme()} />
             <Footer />
+            <style jsx global>
+                {`
+                    body {
+                        margin: 0;
+                        padding: 0;
+                    }
+                `}
+            </style>
         </ThemeProvider>
     )
 }

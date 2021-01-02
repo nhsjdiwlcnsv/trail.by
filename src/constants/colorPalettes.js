@@ -2,7 +2,7 @@ const palettes = {
     light: {
         name: "light",
         backgroundColor: '#FFFFFF',
-        textColor: '#202020',
+        textColor: '#0f0f0f',
         markedTextColor: '#00BC71',
         subtitleTextColor: '#686868',
         navLinkColor: '#000000',
