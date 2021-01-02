@@ -115,8 +115,8 @@
             ]
         }
     },
-    "svyatyeKrinitsi": {
-        "title": "Svyatye krinitsi",
+    "svyatyeKrynitsi": {
+        "title": "Svyatye krynitsi",
         "region": "Minsk",
         "type": "Forest",
         "distance": "250 m",
@@ -141,7 +141,7 @@
             ]
         },
         "texts": {
-            "general": "The wooden eco-trail “Svyatye Krynitsy” was laid for a convenient approach to the springs and for observing nature - it is really magical there, as if it were a location from a fairy tale. The springs here are unique in that they flow from the very top of the mountain and have an interesting history of origin. There is a legend that there used to be a church on the site of the springs, which went deep underground.",
+            "general": "The wooden eco-trail Svyatye krynitsy was laid for a convenient approach to the springs and for observing nature - it is really magical there, as if it were a location from a fairy tale. The springs here are unique in that they flow from the very top of the mountain and have an interesting history of origin. There is a legend that there used to be a church on the site of the springs, which went deep underground.",
             "content1": [
                 "The wooden ecotrail Svyatye Krynitsy deserves special attention of travelers. It is located just 48 km from Minsk in the Minsk region. The place was declared a hydrological natural monument of republican significance and now it belongs to the Krasnoselsky forestry, which keeps order on the trail. This eco-trail was laid for a convenient approach to the springs and for observing nature. The springs here are unique in that they flow from the very top of the mountain and have an interesting history of origin."
             ],

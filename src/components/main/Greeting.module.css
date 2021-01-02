@@ -4,14 +4,14 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
+    align-items: center;
 }
 
 .title {
-    margin: 80px 0 0 0;
-    font-size: 4.5em;
-    font-family: Montserrat medium, sans-serif;
-    line-height: 102px;
+    position: absolute;
+    font-size: 4em;
+    font-family: Montserrat, sans-serif;
+    font-weight: 900;
     color: var(--text);
 }
 
@@ -20,11 +20,12 @@
 }
 
 .hint {
+    margin-top: 25%;
+    width: 47vw;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    cursor: pointer;
 }
 
 .hintTitle {

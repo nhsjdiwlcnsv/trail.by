@@ -1,13 +1,13 @@
-.root {
-    height: 100vh;
+.headerContainer {
+    margin-top: 20%;
+    width: 100%;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
 
-.text {
+.header {
     font-family: Montserrat, sans-serif;
-    font-size: 4em;
+    font-size: 6em;
     font-weight: 900;
-    color: var(--text);
 }

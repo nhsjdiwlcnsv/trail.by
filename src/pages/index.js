@@ -3,6 +3,7 @@ import styles from './Index.module.css'
 import Greeting from '../components/main/Greeting'
 import Yelnya from '../components/main/Yelnya/Yelnya'
 import BlueLakes from '../components/main/BlueLakes'
+import Gallery from "../components/main/Gallery";
 
 
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
             <Greeting />
             <Yelnya />
             <BlueLakes />
+            <Gallery />
         </div>
     )
 }

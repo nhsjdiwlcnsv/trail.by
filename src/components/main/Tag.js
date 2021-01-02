@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import styles from './Tag.module.css'
 import Link from 'next/link'
 import Anime from "react-anime";

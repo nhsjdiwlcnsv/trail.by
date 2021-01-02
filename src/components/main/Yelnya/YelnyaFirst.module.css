@@ -2,8 +2,11 @@
     margin: 150px 0 0 0;
 }
 
-.generalText {
+.generalTextContainer {
     width: 46%;
+}
+
+.generalText {
     font-family: Montserrat medium, sans-serif;
     font-size: 1.875em;
 }
@@ -13,18 +16,19 @@
     font-size: 5em;
 }
 
+.generalBlock {
+    display: flex;
+}
+
 .clippedImg {
-    top: 210%;
-    left: 44%;
-    position: absolute;
+    margin-top: -13%;
     width: 800px;
     height: 686px;
-    filter: url(#filter0_d);
     fill: url(#paint1_image);
 }
 
 .seeMoreLink {
-    margin-top: 5%;
+    margin-top: 15%;
     width: 235px;
     font-size: 2.5em;
     font-weight: 600;

@@ -7,12 +7,11 @@ import { Carousel } from 'react-responsive-carousel'
 export default function BlueLakes() {
     return (
         <div className={styles.root} id="blue-lakes" style={{"--height-after": 12 + 'px'}}>
-            <div className={styles.bgImg}></div>
             <p className={styles.text}>Blue Lakes</p>
             <div className={styles.brief}>
                 <div className={styles.description}>
                     <p>
-                        Ecological trail "<span className={styles.marked}>Blue Lakes</span>"
+                        Ecological trail Blue Lakes
                         is located on the territory of the Narochansky National Park in the
                         Myadel district, 500 m beyond the village of Olshevo.
                         <br />

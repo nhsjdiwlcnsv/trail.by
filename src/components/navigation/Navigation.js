@@ -1,11 +1,11 @@
-import React, { useContext } from 'react'
+import React, {useContext} from 'react'
 import Link from '../Link'
 import ImageLink from '../ImageLink'
 import styles from './Navigation.module.css'
 import { ThemeContext } from '../../theme'
 
 
-const Navigation = () => {
+export default function Navigation() {
 
     const theme = useContext(ThemeContext)
 
@@ -21,16 +21,29 @@ const Navigation = () => {
                 />
             </div>
             <div className={styles.item}>
-                <Link href="/contact" delay={2100}>Contact</Link>
+                <Link
+                    href="/contact"
+                    delay={2100}
+                >
+                    Contact
+                </Link>
             </div>
             <div className={styles.item}>
-                <Link href="/about" delay={2300}>About us</Link>
+                <Link
+                    href="/about"
+                    delay={2300}
+                >
+                    About us
+                </Link>
             </div>
             <div className={styles.item}>
-                <Link href="/trails" delay={2500}>All trails</Link>
+                <Link
+                    href="/trails"
+                    delay={2500}
+                >
+                    All trails
+                </Link>
             </div>
         </div>
     )
 }
-
-export default Navigation

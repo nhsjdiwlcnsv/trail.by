@@ -8,16 +8,18 @@ export default function YelnyaFirst() {
     return (
         <div className={styles.general} style={{"--height-after": 6 + 'px'}}>
             <p className={styles.generalTitle}>What is Yelnya?</p>
-            <p className={styles.generalText}>
-                <span className={styles.marked}>Yelnya</span> is called one of the
-                biggest lungs of Europe and is very old - 9000 y.o. Its pure air, vast
-                mires views, endless cranberries plantations and fragrance - all worth
-                coming for 3 hours. Highly recommended for nature lovers!
-            </p>
-            <div className={styles.seeMoreLink}>
-                <Link href="#gallery">See photos</Link>
-            </div>
-            <div>
+            <div className={styles.generalBlock}>
+                <div className={styles.generalTextContainer}>
+                    <p className={styles.generalText}>
+                        Yelnya is called one of the
+                        biggest lungs of Europe and is very old - 9000 y.o. Its pure air, vast
+                        mires views, endless cranberries plantations and fragrance - all worth
+                        coming for 3 hours. Highly recommended for nature lovers!
+                    </p>
+                    <div className={styles.seeMoreLink}>
+                        <Link href="#gallery">See photos</Link>
+                    </div>
+                </div>
                 <svg
                     width="667"
                     height="576"
@@ -30,27 +32,6 @@ export default function YelnyaFirst() {
                         />
                     </g>
                     <defs>
-                        <filter
-                            id="filter0_d"
-                            x="0"
-                            y="0"
-                            filterUnits="userSpaceOnUse"
-                        >
-                            <feFlood floodOpacity="0" result="BackgroundImageFix"/>
-                            <feColorMatrix
-                                in="SourceAlpha"
-                                type="matrix"
-                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 150 0"
-                            />
-                            <feOffset/>
-                            <feGaussianBlur stdDeviation="15"/>
-                            <feColorMatrix
-                                type="matrix"
-                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.4 0"
-                            />
-                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
-                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
-                        </filter>
                         <pattern
                             id="paint1_image"
                             viewBox="0 0 1 1"

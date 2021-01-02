@@ -45,12 +45,14 @@
 }
 
 .header {
+    margin: 0;
     width: 90%;
-    font-size: 7.5em;
+    font-size: 7em;
     font-weight: 900;
 }
 
 .headerSmall {
+    margin: 0;
     width: 90%;
     font-size: 6em;
     font-weight: 900;
@@ -61,8 +63,8 @@
 }
 
 .results {
+    margin-top: 15%;
     width: 95%;
-    margin-top: 5%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
