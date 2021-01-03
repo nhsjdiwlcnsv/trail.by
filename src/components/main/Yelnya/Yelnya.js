@@ -12,7 +12,7 @@ export default function Yelnya() {
     const date = `${today.getFullYear()}.${today.getMonth() + 1}.${today.getDate()}`
 
     return (
-        <div className={styles.root} style={{"--height-after": 12 + 'px'}} id="elnya">
+        <div className={styles.root} style={{"--height-after": 12 + 'px'}} id="#yelnya">
             <p className={styles.release}>Meet Yelnya!</p>
             <p className={styles.date}>{date}</p>
             <Note />

@@ -10,10 +10,10 @@
 
 .firstLine,
 .secondLine {
-    margin-top: 5%;
+    margin-top: 7%;
     position: absolute;
     font-family: Montserrat medium, sans-serif;
-    font-size: 32px;
+    font-size: 1.875em;
     color: #ffffff;
 }
 

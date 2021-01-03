@@ -12,7 +12,7 @@ export default function AboutInfo({ name, number, email, color }) {
                     :
                     <img src='/images/backgrounds/firRed.png' className={styles.imageCard} />
             }
-            <p className={styles.name} style={{color: color === "green" ? "#00BC71" : "#E77B54"}}>{name}</p>
+            <p className={styles.name} style={{color: color === "green" ? "#00BC71" : "#FF7262"}}>{name}</p>
             <div className={styles.topSection}>
                 <p className={styles.header}>Phone number</p>
                 <p className={styles.number}>{number}</p>

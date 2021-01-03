@@ -22,7 +22,7 @@ export default function Greeting() {
                 >
                     <p className={styles.hintTitle}>Go to:</p>
                 </Anime>
-                <Tag title="#Yelnya" link="/#elnya" delay={4400}/>
+                <Tag title="#Yelnya" link="/#yelnya" delay={4400}/>
                 <Tag title="#Blue lakes" link="/#blue-lakes" delay={4500}/>
                 <Tag title="#Galleries" link="/#galleries" delay={4600}/>
             </div>
