@@ -180,7 +180,7 @@
             ]
         },
         "texts": {
-            "name": "Olmanskie Swamps",
+            "name": "Olmanskie bogs",
             "general": "Olmanskie bogs are a complex of different types of bogs, both upland, lowland, and transitional. Due to the fact that access to the area of the local military training ground was closed, most of the nature remained untouched - they even wanted to make this territory a reserve, but so far the status has remained at the level of the reserve.",
             "content1": [
                 "The best place for a tourist visit is the western part of the bogs (for example, the Bukcha village in the Lelchitsy district of the Gomel region), and for a guide, contact the Stolin forestry enterprise.",
@@ -191,6 +191,46 @@
             ],
             "content3": [
                 "Olmanskie swamps are famous for cranberries - when you plan your route, put in a couple of extra hours to search for and eat berries. You can meet other pickers, and their huts, and the paths they have trodden - both locals and Ukrainians come for cranberries, who  provide themselves with money due to selling them."
+            ]
+        }
+    },
+    "alongTheForestReserveTrail" : {
+        "title": "Along the forest reserve trail",
+        "region": "Vitebsk",
+        "type": "Swamp",
+        "distance": "3 km",
+        "background": "/images/ecotrails/AlongTheForestReserveTrail/AlongTheForestReserveTrail0.jpg",
+        "photos": {
+            "contents": [
+                "/images/ecotrails/AlongTheForestReserveTrail/AlongTheForestReserveTrail0.jpg",
+                "/images/ecotrails/AlongTheForestReserveTrail/DSC_2925.jpg",
+                "/images/ecotrails/AlongTheForestReserveTrail/20190804_143342.jpg",
+                "/images/ecotrails/AlongTheForestReserveTrail/IMG_1040.jpg"
+            ],
+            "icons": [
+                "/images/icons/Frame.svg",
+                "/images/icons/Frame-1.svg",
+                "/images/icons/Frame-2.svg",
+                "/images/icons/Frame-3.svg"
+            ],
+            "main": [
+                "/images/ecotrails/AlongTheForestReserveTrail/DSC_2925.jpg",
+                "/images/ecotrails/AlongTheForestReserveTrail/atfrt.jpg",
+                "/images/ecotrails/AlongTheForestReserveTrail/IMG_1040.jpg"
+            ]
+        },
+        "texts": {
+            "name": "Along the forest reserve trail",
+            "general": "\"Along the forest reserve trail\" is a semi-circular walking ecological trail 2.5 km long. If possible, single visitors are united into groups, and accompanied by a guide, they walk the entire route, getting acquainted with nature.",
+            "content1": [
+                "The eco-trail provides an excellent opportunity to get acquainted with the flora and fauna of the protected area, hear the singing of birds, admire the panorama of the vast sphagnum bog from the tower and get acquainted with its vegetation, see traces of animal life, and possibly see the inhabitants of the protected forests. Length - 3 km, duration - 3 hours.",
+                "In just a couple of hours, a gloomy spruce forest and a damp aspen forest will reveal their secrets in front of you, replacing each other, a pine forest at the edge of a swamp and a light birch forest with thickets of hazel will delight you with an abundance of light."
+            ],
+            "content2": [
+                "A 15-meter observation tower opens up a majestic panorama of a raised bog shrouded in fog, where a carpet of sphagnum moss, fruit-bearing cotton grass, insectivorous sundew and cranberries revive the swamp at different times of the year."
+            ],
+            "content3": [
+                "The route is equipped with interesting information stands within the framework of the implementation in the Berezinsky Biosphere Reserve of a joint project of the European Union and the United Nations Development Program \"Raising the environmental awareness of youth through the establishment and development of Green Schools in Belarus.\""
             ]
         }
     }

@@ -5,6 +5,7 @@ import Anime from "react-anime";
 
 
 export default function Tag({ title, link, delay }) {
+
     return (
         <Anime
             opacity={[0,1]}

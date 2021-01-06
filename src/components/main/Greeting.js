@@ -9,7 +9,7 @@ export default function Greeting() {
     return (
         <div className={styles.root}>
             <div className={styles.title}>
-                <Typing speed={100}>
+                <Typing startDelay={50} speed={100}>
                     Explore Belarusian nature with us.
                 </Typing>
             </div>

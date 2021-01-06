@@ -9,7 +9,10 @@ export default function AboutTeam() {
                 Trail helps you discover the world of ecotourism in Belarus due to collecting a variety of ecotrails from all over the country.
             </p>
             <div className="firs">
-                <Anime>
+                <Anime
+                    scale={[0.6,1]}
+                    easing="easeOutExpo"
+                >
                     <img className="firs-img" src='/images/backgrounds/AboutTextBG.svg' alt="firs"/>
                 </Anime>
             </div>
