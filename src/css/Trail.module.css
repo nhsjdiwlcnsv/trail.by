@@ -152,6 +152,7 @@
 
 .gallery {
     margin-top: 15%;
+    padding-bottom: 5%;
     width: calc(100% - 100px);
 }
 
