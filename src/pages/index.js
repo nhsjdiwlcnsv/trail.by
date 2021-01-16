@@ -9,6 +9,7 @@ import Gallery from "../components/main/Gallery";
 export default function Home() {
     return (
         <div className={styles.container}>
+            <title>Home - Trail</title>
             <Greeting />
             <Yelnya />
             <BlueLakes />

@@ -6,6 +6,7 @@ export default function Trail({ trail }) {
 
     return (
         <div className={styles.containerTrail}>
+            <title>{trail.title} - Trail</title>
             <div className={styles.content1}>
                 <div className={styles.title}>
                     <p className={styles.textInfo}>

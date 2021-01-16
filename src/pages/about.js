@@ -9,6 +9,7 @@ export default function About() {
 
     return (
         <div className={styles.containerAbout}>
+            <title>About us - Trail</title>
             <AboutTeam />
             <div className={styles.ourTeamContainer}>
                 <p className={styles.ourTeam}>Our team</p>

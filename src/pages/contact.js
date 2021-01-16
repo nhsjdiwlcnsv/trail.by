@@ -9,6 +9,7 @@ export default function Contact() {
 
     return (
         <div className={styles.containerContact}>
+            <title>Contact - Trail</title>
             <Slogan />
             <div className={styles.contactContent}>
                 <Social />

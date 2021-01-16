@@ -13,6 +13,7 @@ export default function Trails({ trails }) {
 
     return (
         <div className={styles.root} style={{"--height-after": 4 + 'px'}}>
+            <title>All trails - Trail</title>
             <div className={styles.centered}>
                 <div className={styles.searchTrails}>
                     <input
