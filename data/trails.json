@@ -1,5 +1,5 @@
 {
-    "Yelnya": {
+    "yelnya": {
         "title": "Yelnya",
         "region": "Vitebsk",
         "type": "Swamp",
@@ -39,7 +39,7 @@
             ]
         }
     },
-    "blueLakes": {
+    "blue-lakes": {
         "title": "Blue lakes",
         "region": "Minsk",
         "type": "Forest",
@@ -115,7 +115,7 @@
             ]
         }
     },
-    "svyatyeKrynitsi": {
+    "svyatye-krynitsi": {
         "title": "Svyatye krynitsi",
         "region": "Minsk",
         "type": "Forest",
@@ -154,7 +154,7 @@
             ]
         }
     },
-    "olmanskieBogs": {
+    "olmanskie-bogs": {
         "title": "Olmanskie bogs",
         "region": "Brest",
         "type": "Swamp",
@@ -194,7 +194,7 @@
             ]
         }
     },
-    "alongTheForestReserveTrail" : {
+    "along-the-forest-reserve-trail" : {
         "title": "Along the forest reserve trail",
         "region": "Vitebsk",
         "type": "Swamp",

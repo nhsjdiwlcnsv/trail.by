@@ -30,8 +30,8 @@
 .carousel {
     z-index: 2;
     margin-left: 7%;
-    width: 550px;
-    height: 675px;
+    width: 500px;
+    height: 615px;
     border-radius: 25px;
     overflow: hidden;
 }

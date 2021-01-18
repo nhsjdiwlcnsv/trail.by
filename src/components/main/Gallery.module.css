@@ -1,5 +1,5 @@
 .headerContainer {
-    margin-top: 20%;
+    margin-top: 25%;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -8,6 +8,6 @@
 
 .header {
     font-family: Montserrat, sans-serif;
-    font-size: 6em;
+    font-size: 4em;
     font-weight: 900;
 }

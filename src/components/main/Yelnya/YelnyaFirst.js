@@ -17,7 +17,7 @@ export default function YelnyaFirst() {
                         coming for 3 hours. Highly recommended for nature lovers!
                     </p>
                     <div className={styles.seeMoreLink}>
-                        <Link href="#gallery">See photos</Link>
+                        <Link href="#galleries">See photos</Link>
                     </div>
                 </div>
                 <svg
