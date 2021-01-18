@@ -43,7 +43,7 @@ export default function BlueLakes() {
                 </div>
             </div>
             <div className={styles.linkContainer}>
-                <Link href="/trail/blueLakes" className={styles.more}>See more</Link>
+                <Link href="/trail/blue-lakes" className={styles.more}>See more</Link>
             </div>
         </div>
     )
