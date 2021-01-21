@@ -22,6 +22,10 @@ let MyApp = ({ Component, pageProps }) => {
                         margin: 0;
                         padding: 0;
                     }
+                    ::selection {
+                        background: #24DC93;
+                        color: var(--text)
+                    }
                 `}
             </style>
         </ThemeProvider>

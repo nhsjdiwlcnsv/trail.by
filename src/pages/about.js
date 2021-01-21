@@ -12,7 +12,7 @@ export default function About() {
             <title>About us - Trail</title>
             <AboutTeam />
             <div className={styles.ourTeamContainer}>
-                <p className={styles.ourTeam}>Our team</p>
+                <h1 className={styles.ourTeam}>Our team</h1>
                 <div className={styles.teamCards}>
                     <AboutInfo
                         name="Vasiliy Pupkin"

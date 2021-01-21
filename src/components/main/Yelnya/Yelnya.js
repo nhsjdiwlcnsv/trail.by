@@ -13,7 +13,7 @@ export default function Yelnya() {
 
     return (
         <div className={styles.root} style={{"--height-after": 12 + 'px'}} id="yelnya">
-            <p className={styles.release}>Meet Yelnya!</p>
+            <h1 className={styles.release}>Meet Yelnya!</h1>
             <p className={styles.date}>{date}</p>
             <Note />
             <YelnyaFirst />

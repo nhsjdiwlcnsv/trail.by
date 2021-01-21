@@ -8,7 +8,7 @@ export default function Slogan() {
     return (
         <div className={styles.root}>
             <Typing speed={100}>
-                <p className={styles.text}>We are glad to get in touch with you!</p>
+                <h2 className={styles.text}>We are glad to get in touch with you!</h2>
             </Typing>
         </div>
     )

@@ -5,7 +5,7 @@ import React from "react";
 export default function YelnyaSecond() {
     return (
         <div className={styles.btw}>
-            <p className={styles.btwTitle}>By the way...</p>
+            <h2 className={styles.btwTitle}>By the way...</h2>
             <p className={styles.btwText}>
                 The territory of the Yelnya nature reserve is one of the
                 least explored in the country. The reason lies in the difficult accessibility of most of its sites.

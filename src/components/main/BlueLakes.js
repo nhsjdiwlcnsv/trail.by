@@ -7,7 +7,7 @@ import { Carousel } from 'react-responsive-carousel'
 export default function BlueLakes() {
     return (
         <div className={styles.root} id="blue-lakes" style={{"--height-after": 12 + 'px'}}>
-            <p className={styles.text}>Blue Lakes</p>
+            <h1 className={styles.text}>Blue lakes</h1>
             <div className={styles.brief}>
                 <div className={styles.description}>
                     <p>

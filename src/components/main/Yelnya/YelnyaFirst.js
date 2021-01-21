@@ -7,7 +7,7 @@ export default function YelnyaFirst() {
 
     return (
         <div className={styles.general} style={{"--height-after": 6 + 'px'}}>
-            <p className={styles.generalTitle}>What is Yelnya?</p>
+            <h2 className={styles.generalTitle}>What is Yelnya?</h2>
             <div className={styles.generalBlock}>
                 <div className={styles.generalTextContainer}>
                     <p className={styles.generalText}>

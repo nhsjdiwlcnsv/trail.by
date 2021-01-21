@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from '../../css/Trail.module.css'
+import trails from "../trails";
 
 
 export default function Trail({ trail }) {
@@ -10,7 +11,7 @@ export default function Trail({ trail }) {
             <div className={styles.content1}>
                 <div className={styles.title}>
                     <p className={styles.textInfo}>
-                        <p className={styles.trailTitle}>{trail.title}</p>
+                        <h1 className={styles.trailTitle}>{trail.title}</h1>
                         <div className={styles.trailParams}>
                             <p className={styles.param}>{trail.distance}</p>
                             <p
@@ -37,14 +38,14 @@ export default function Trail({ trail }) {
             <div className={styles.gInfo}>
                 <p className={styles.generalText}>{trail.texts.general}</p>
             </div>
-            <p className={styles.subtitle}>Take a look on some photos</p>
+            <h3 className={styles.subtitle}>Take a look at some photos</h3>
             <div className={styles.mainPhotos}>
                 {([...trail.photos.main]).map(e=>
                     <img
                         className={styles.mainImg}
                         src={e}
                         key={e}
-                        alt=""
+                        alt={trail.title + ' image'}
                     />
                 )}
             </div>
@@ -71,14 +72,14 @@ export default function Trail({ trail }) {
                     </div>
                 </div>
                 <div className={styles.gallery}>
-                    <p className={styles.galleryText}>Gallery</p>
+                    <h3 className={styles.galleryText}>Gallery</h3>
                     <div className={styles.photos}>
                         {([...trail.photos.contents]).map(e=>
                             <img
                                 className={styles.galleryImg}
                                 src={e}
                                 key={e}
-                                alt=""
+                                alt={trail.title + " gallery image"}
                             />
                         )}
                     </div>

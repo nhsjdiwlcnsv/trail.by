@@ -21,7 +21,7 @@ export default function Trails({ trails }) {
                         type="text"
                         value={query}
                         placeholder="Start searching!"
-                        maxLength="20"
+                        maxLength="30"
                         onChange={(e) => setQuery(e.target.value)}
                     />
                     <SearchButton size={'2.5em'} onClick={() => setRealQuery(query)} />
